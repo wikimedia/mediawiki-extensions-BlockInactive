@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiWorks team"
+		]
+	},
+	"blockinactive-desc": "BlockInactive extension description",
+	"blockinactive-special-intro": "Special page intro text",
+	"blockinactive": "Special page title",
+	"blockinactive-table-username": "username column",
+	"blockinactive-table-userid": "userid column",
+	"blockinactive-table-inactivetime": "inactivetime column",
+	"blockinactive-table-emailsent": "emailsent column",
+	"blockinactive-table-actions": "actions column",
+	"blockinactive-action-block": "block action",
+	"blockinactive-config-threshold": "threshold setting",
+	"blockinactive-config-daysblock": "daysblock setting",
+	"blockinactive-config-warningdaysleft": "warningdaysleft setting",
+	"blockinactive-config-mail-subject": "Subject for account expiration warning email",
+	"blockinactive-config-mail-body": "Text for account expiration warning email",
+	"blockinactive-config-mail-block-subject": "Subject for account blocking warning email",
+	"blockinactive-config-mail-block-body": "Text for account blocking warning email",
+	"action-blockinactive": "blockinactive action description",
+	"right-blockinactive": "blockinactive right- description",
+	"right-alwaysactive": "alwaysactive right- description",
+	"action-alwaysactive": "alwaysactive action description"
+}

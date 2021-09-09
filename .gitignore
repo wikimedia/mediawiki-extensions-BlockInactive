@@ -1,0 +1,11 @@
+.svn
+*~
+*.kate-swp
+.*.swp
+.idea
+.project
+/composer.lock
+/vendor/
+/coverage/
+/node_modules/
+/.eslintcache

@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiWorks team"
+		]
+	},
+	"blockinactive-desc": "Blocks all users who do not log in before a certain number of days have transpired since their last login.",
+	"blockinactive-special-intro": "Below is the list of pending to be blocked inactive users. Users with a last login date >='''$1''' days are treated as inactive and will be blocked after '''$2''' days since their last login. They'll receive warning emails '''$3''' day(s) before being blocked and a single email after the actual block.",
+	"blockinactive": "Block inactive accounts",
+	"blockinactive-table-username": "Username",
+	"blockinactive-table-userid": "User id",
+	"blockinactive-table-inactivetime": "Inactive time",
+	"blockinactive-table-emailsent": "Email sent",
+	"blockinactive-table-actions": "Actions",
+	"blockinactive-action-block": "Block",
+	"blockinactive-config-threshold": "Days to treat account as inactive",
+	"blockinactive-config-daysblock": "Days to start blocking",
+	"blockinactive-config-warningdaysleft": "Days to send block precaution warning",
+	"blockinactive-config-mail-subject": "Warning! Your wiki account will be blocked soon",
+	"blockinactive-config-mail-body": "Your wiki account will be automatically blocked soon since it has been inactive. In order to avoid this, please log in to {{SITENAME}}, which will make your account active and prevent the block from occurring.",
+	"blockinactive-config-mail-block-subject": "Your wiki account has been blocked",
+	"blockinactive-config-mail-block-body": "Your wiki account has been automatically blocked since it has been inactive. In order to reinstate your acccount, please contact a {{SITENAME}} system administrator.",
+	"action-blockinactive": "Block inactive accounts",
+	"right-blockinactive": "Block inactive accounts",
+	"right-alwaysactive": "Bypass blocking for inactivity",
+	"action-alwaysactive": "Bypass blocking for inactivity"
+}

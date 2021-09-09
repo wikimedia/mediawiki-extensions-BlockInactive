@@ -1,0 +1,72 @@
+{
+	"name": "BlockInactive",
+	"author": "WikiWorks team",
+	"url": "https://www.mediawiki.org/wiki/Extension:BlockInactive",
+	"descriptionmsg": "blockinactive-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "extension",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extensions\\BlockInactive\\": "includes/"
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extensions\\BlockInactive\\BlockInactiveMaintenance": "maintenance/blockinactive.php"
+	},
+	"Hooks": {
+		"UserLoginComplete": "MediaWiki\\Extensions\\BlockInactive\\BlockInactiveHooks::onUserLoginComplete",
+		"LoadExtensionSchemaUpdates": "MediaWiki\\Extensions\\BlockInactive\\BlockInactiveHooks::onLoadExtensionSchemaUpdates"
+	},
+	"MessagesDirs": {
+		"BlockInactive": [
+			"i18n"
+		]
+	},
+	"SpecialPages": {
+		"BlockInactive": "MediaWiki\\Extensions\\BlockInactive\\SpecialBlockInactive"
+	},
+	"ExtensionMessagesFiles": {
+		"BlockInactiveAlias": "includes/BlockInactive.alias.php"
+	},
+	"ResourceModules": {
+		"ext.blockinactive": {
+			"styles": [
+				"blockinactive.less"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "BlockInactive/modules"
+	},
+	"AvailableRights": [
+		"blockinactive",
+		"alwaysactive"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"blockinactive": true,
+			"alwaysactive": true
+		},
+		"bureaucrat": {
+			"blockinactive": true
+		}
+	},
+	"config": {
+		"BlockInactiveThreshold": {
+			"value": 210
+		},
+		"BlockInactiveDaysBlock": {
+			"value": 270
+		},
+		"BlockInactiveWarningDaysLeft": {
+			"value": [
+				30,
+				5
+			],
+			"merge_strategy": "array_replace_recursive"
+		}
+	},
+	"manifest_version": 2
+}
