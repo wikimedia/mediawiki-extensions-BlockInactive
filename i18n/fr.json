@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Verdy p"
+		]
+	},
+	"blockinactive-desc": "Bloque tous les utilisateurs qui ne se sont pas connectés avant un certain nombre de jours depuis leur dernière connexion.",
+	"blockinactive-special-intro": "Voici ci-dessous la liste des utilisateurs inactifs susceptibles d'être bloqués. Les utilisateurs dont la dernière date de connexion remonte à au moins '''$1''' jours sont considérés comme inactifs et seront bloqués au delà de '''$2''' jours depuis leur dernière connexion. Ils recevront des courriels d’avertissement '''$3''' jours avant leur blocage et un unique courriel après leur blocage effectif.",
+	"blockinactive": "Bloquer les comptes inactifs",
+	"blockinactive-table-username": "Nom d’utilisateur",
+	"blockinactive-table-userid": "Identifiant d’utilisateur",
+	"blockinactive-table-inactivetime": "Durée d’inactivité",
+	"blockinactive-table-emailsent": "Courriel envoyé",
+	"blockinactive-table-actions": "Actions",
+	"blockinactive-action-block": "Bloquer",
+	"blockinactive-config-threshold": "Jours passés pour considérer un compte comme inactif",
+	"blockinactive-config-daysblock": "Jours passés avant de commencer le blocage",
+	"blockinactive-config-warningdaysleft": "Jours passés avant d’envoyer un avertissement préalable au blocage",
+	"blockinactive-config-mail-subject": "Attention ! Votre compte wiki sera bientôt bloqué",
+	"blockinactive-config-mail-body": "Votre compte wiki sera bientôt automatiquement bloqué puisqu’il est resté inactif. Afin d’éviter ceci, veuillez vous connecter sur {{SITENAME}}, afin de rendre votre compte comme actif et d’éviter son blocage.",
+	"blockinactive-config-mail-block-subject": "Votre compte wiki a été bloqué",
+	"blockinactive-config-mail-block-body": "Votre compte wiki a été bloqué automatiquement puisqu’il est resté inactif. Afin de réactiver votre compte, veuillez contacter un administrateur système de {{SITENAME}}.",
+	"action-blockinactive": "Bloquer les comptes inactifs",
+	"right-blockinactive": "Bloquer les comptes inactifs",
+	"right-alwaysactive": "Outrepasser le blocage pour cause d’inactivité",
+	"action-alwaysactive": "Outrepasser le blocage pour cause d’inactivité"
+}

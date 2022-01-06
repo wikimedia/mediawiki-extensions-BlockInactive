@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"blockinactive": "Blocco utenze inattive",
+	"blockinactive-table-username": "Nome utente",
+	"blockinactive-table-userid": "ID utente",
+	"blockinactive-table-inactivetime": "Tempo di inattività",
+	"blockinactive-table-actions": "Azioni",
+	"blockinactive-action-block": "Blocca"
+}

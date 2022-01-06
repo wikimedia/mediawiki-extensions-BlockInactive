@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"RYOUMA1117"
+		]
+	},
+	"blockinactive-table-username": "利用者名",
+	"blockinactive-table-userid": "利用者ID",
+	"blockinactive-table-emailsent": "メールを送信しました",
+	"blockinactive-table-actions": "操作",
+	"blockinactive-action-block": "ブロック"
+}

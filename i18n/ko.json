@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yunbj"
+		]
+	},
+	"blockinactive": "비활성화된 계정 차단",
+	"blockinactive-table-username": "사용자 이름",
+	"blockinactive-table-userid": "사용자 아이디",
+	"blockinactive-table-inactivetime": "비활성화 시간",
+	"blockinactive-table-emailsent": "이메일을 보냈습니다",
+	"blockinactive-action-block": "차단",
+	"blockinactive-config-threshold": "비활성 계정으로 처리하기 위한 날짜",
+	"blockinactive-config-daysblock": "차단을 시작할 날짜",
+	"blockinactive-config-warningdaysleft": "차단에 대한 사전 주의 경고를 보낼 날짜",
+	"blockinactive-config-mail-subject": "경고! 위키 계정이 곧 차단됩니다.",
+	"action-blockinactive": "비활성 계정들을 차단합니다.",
+	"right-blockinactive": "비활성 계정들을 차단합니다.",
+	"right-alwaysactive": "비활성화 차단을 우회합니다.",
+	"action-alwaysactive": "비활성화 차단 우회"
+}

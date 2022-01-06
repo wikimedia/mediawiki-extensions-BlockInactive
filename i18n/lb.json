@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"blockinactive-table-username": "Benotzernumm",
+	"blockinactive-table-userid": "Benotzer-ID",
+	"blockinactive-table-emailsent": "E-Mail geschéckt",
+	"blockinactive-table-actions": "Aktiounen",
+	"blockinactive-action-block": "Spären"
+}

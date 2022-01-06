@@ -1,18 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
+			"Robby",
 			"WikiWorks team"
 		]
 	},
 	"blockinactive-desc": "BlockInactive extension description",
 	"blockinactive-special-intro": "Special page intro text",
 	"blockinactive": "Special page title",
-	"blockinactive-table-username": "username column",
+	"blockinactive-table-username": "username column\n{{identical|Username}}",
 	"blockinactive-table-userid": "userid column",
 	"blockinactive-table-inactivetime": "inactivetime column",
 	"blockinactive-table-emailsent": "emailsent column",
-	"blockinactive-table-actions": "actions column",
-	"blockinactive-action-block": "block action",
+	"blockinactive-table-actions": "actions column\n{{identical|Action}}",
+	"blockinactive-action-block": "block action\n{{identical|Block}}",
 	"blockinactive-config-threshold": "threshold setting",
 	"blockinactive-config-daysblock": "daysblock setting",
 	"blockinactive-config-warningdaysleft": "warningdaysleft setting",

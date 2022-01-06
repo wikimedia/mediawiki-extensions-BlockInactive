@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO"
+		]
+	},
+	"blockinactive": "Estä passiiviset käyttäjät",
+	"blockinactive-table-username": "Käyttäjänimi",
+	"blockinactive-table-userid": "Käyttäjän ID",
+	"blockinactive-table-emailsent": "Sähköposti lähetetty",
+	"blockinactive-table-actions": "Toiminnot",
+	"blockinactive-action-block": "Estä",
+	"blockinactive-config-daysblock": "Päiviä eston alkamiseen",
+	"blockinactive-config-warningdaysleft": "Päiviä eston varoitusvaroituksen lähettämiseen",
+	"blockinactive-config-mail-subject": "Varoitus! Käyttäjäsi estetään pian",
+	"right-blockinactive": "Estä passiiviset käyttäjät"
+}

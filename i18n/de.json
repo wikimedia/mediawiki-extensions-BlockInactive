@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"blockinactive-desc": "Sperrt alle Benutzer, die sich nicht anmelden, bevor eine bestimmte Anzahl von Tagen seit ihrer letzten Anmeldung verstrichen ist.",
+	"blockinactive-special-intro": "Nachstehend findst du die Liste der zu sperrenden inaktiven Benutzer. Benutzer mit einem letzten Anmeldedatum >= '''$1''' Tage werden als inaktiv behandelt und werden nach '''$2''' Tagen seit ihrer letzten Anmeldung gesperrt. Sie erhalten '''$3''' Tage vor der Sperrung eine Warn-E-Mail und nach der eigentlichen Sperrung eine weitere E-Mail.",
+	"blockinactive": "Inaktive Konten sperren",
+	"blockinactive-table-username": "Benutzername",
+	"blockinactive-table-userid": "Benutzer-ID",
+	"blockinactive-table-inactivetime": "Inaktive Zeit",
+	"blockinactive-table-emailsent": "E-Mail verschickt",
+	"blockinactive-table-actions": "Aktionen",
+	"blockinactive-action-block": "Sperren",
+	"blockinactive-config-threshold": "Tage, um das Konto als inaktiv zu behandeln",
+	"blockinactive-config-daysblock": "Tage bis zum Beginn der Sperrung",
+	"blockinactive-config-warningdaysleft": "Tage, um eine Warnung zur Sperre zu senden",
+	"blockinactive-config-mail-subject": "Warnung! Dein Wiki-Account wird bald gesperrt werden",
+	"blockinactive-config-mail-body": "Dein Wiki-Account wird demnächst automatisch gesperrt, da er inaktiv war. Um dies zu vermeiden, melde dich bitte auf {{SITENAME}} an, wodurch dein Konto aktiv wird und die Sperrung verhindert wird.",
+	"blockinactive-config-mail-block-subject": "Dein Benutzerkonto wurde gesperrt",
+	"blockinactive-config-mail-block-body": "Dein Wiki-Account wurde automatisch gesperrt, da er inaktiv war. Um ein Konto wieder zu aktivieren, kontaktiere bitte einen {{SITENAME}}-Systemadministrator.",
+	"action-blockinactive": "Inaktive Konten sperren",
+	"right-blockinactive": "Inaktive Konten sperren",
+	"right-alwaysactive": "Umgehung der Sperrung bei Inaktivität",
+	"action-alwaysactive": "Umgehung der Sperrung bei Inaktivität"
+}

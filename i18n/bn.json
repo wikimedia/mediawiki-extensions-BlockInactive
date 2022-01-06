@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yahya"
+		]
+	},
+	"blockinactive-table-username": "ব্যবহারকারী নাম",
+	"blockinactive-table-actions": "পদক্ষেপ",
+	"blockinactive-config-mail-subject": "সতর্কতা! আপনার উইকি অ্যাকাউন্ট শীঘ্রই বাধাপ্রাপ্ত হবে"
+}

@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amoaniwaa"
+		]
+	},
+	"blockinactive-desc": "Siw obiara a wamfa ne din ne ne password nni dwuma nna dodow bi akyi fi da a atwa to a wɔde wɔn din ne password dii dwuma.",
+	"blockinactive": "Siw dwumadi a wɔyɛɛ ho adwuma akyɛ.",
+	"blockinactive-table-username": "Wo din",
+	"blockinactive-table-inactivetime": "Bere a dwumadi biara nkɔ so",
+	"blockinactive-table-emailsent": "Yɛde email no asoma",
+	"blockinactive-table-actions": "Nneyɛe",
+	"blockinactive-action-block": "Siw hokwan",
+	"blockinactive-config-threshold": "Nna ahorow a yebetumi aka sɛ account no da hɔ kwa a dwumadi biara nkɔ so",
+	"blockinactive-config-daysblock": "Nna a wobetumi afi ase asiw dwumadi hokwan",
+	"blockinactive-config-warningdaysleft": "Nna ahorow a yɛde dwumadi a yesiw hokwan kɔkɔbɔ ma",
+	"blockinactive-config-mail-subject": "Kɔkɔbɔ! Ɛrenkye yɛbesiw wo wiki dwumadi ho kwan.",
+	"blockinactive-config-mail-body": "Ɛrenkyɛ yebesiw wo wiki account hokwan efisɛ wode dii dwuma akyɛ. Sɛ wompɛ sɛ yesiw wo account no ano a, yɛserɛwo sɛ bɔ wo din ne wo password wɔ {{SITENAME}}, eyi bɛma wo account no ano akɔ so ada hɔ.",
+	"blockinactive-config-mail-block-subject": "Wonni wo wiki account no hokwan anaa yesiw ano.",
+	"blockinactive-config-mail-block-body": "Yesiw wo wiki account no ano efisɛ wode dii dwuma akyɛ. Sɛ wopɛsɛ wode wo account do di dwuma a, yɛsrɛ wo hu {{SITENAME}} system administrator.",
+	"action-blockinactive": "Siw dwumadi a wɔyɛɛ ho adwuma akyɛ.",
+	"right-blockinactive": "Siw dwumadi a wɔyɛɛ ho adwuma akyɛ."
+}
