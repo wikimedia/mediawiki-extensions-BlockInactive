@@ -5,6 +5,16 @@
 			"Joshateji"
 		]
 	},
+	"blockinactive-special-intro": "Kandai yinkọ nọtẹn lọ zantọ he ma to nude wa lẹ tọn he ma ko yin susú wẹ yin dehe tin to odò ehelẹ. Nọten lọ zantọ he ma sọawuhia to notẹn lọ na >='''$1''' azan susu lẹ nọ yin pinpọnhlan di mẹhe ma to nude wa to nọtẹn lọ podọ bo na yin susú to azan '''$2''' lẹ godo eyin e ma sọawuhia to notẹn lọ. Wekanhlanmẹ avase tọn na yin sisẹdo ye to azan '''$3''' lẹ jẹnukọn whẹpo nudọnamẹ lọ lẹ nado yin susú podọ wekanhlanmẹ dopo na yin sisẹdo eyin e wá yin susú godo.",
+	"blockinactive": "Sú nudọnamẹ nọtẹn lọ zantọ he ma to awusọhia lẹ tọn",
+	"blockinactive-table-username": "Yinkọ hiadogonamẹ tọn",
+	"blockinactive-table-userid": "Nudọnamẹ nọtẹn lọ zantọ tọn",
+	"blockinactive-table-inactivetime": "Whènu he yè ma to nude wa",
 	"blockinactive-table-emailsent": "Wekanhlanmẹ lọ ko yin sisẹdó",
-	"blockinactive-table-actions": "Nuyiwa lẹ"
+	"blockinactive-table-actions": "Nuyiwa lẹ",
+	"blockinactive-action-block": "Sú i",
+	"blockinactive-config-warningdaysleft": "Azan lẹ he gbè avase na yin nina nado sú nudọnamẹ",
+	"blockinactive-config-mail-subject": "Avase! Nudọnamẹ towe he tin to wiki ji na yin susú to madẹnmẹ",
+	"action-blockinactive": "Sú nudọnamẹ nọtẹn lọ zantọ he ma to awusọhia lẹ tọn",
+	"right-blockinactive": "Sú nudọnamẹ mẹhe ma to nude wa lẹ tọn"
 }

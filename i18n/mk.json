@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"blockinactive-desc": "Ги блокира сите корисници што нема да се најават извесен број денови.",
+	"blockinactive-special-intro": "Подолу е прикажан список на неактивни корисници кои треба да се блокираат. Корисниците кои последен пат се најавиле пред >='''$1''' дена се сметаат за неактивни и ќе бидат блокирани по '''$2''' дена од нивнта последна најава. Ќе добијат предупредителни пораки по е-пошта '''$3''' ден(а) пред блокирањето и една порака по самиот блок.",
+	"blockinactive": "Блокирање на неактивни сметки",
+	"blockinactive-table-username": "Корисничко име",
+	"blockinactive-table-userid": "Корисничка ознака",
+	"blockinactive-table-inactivetime": "Време на неактивност",
+	"blockinactive-table-emailsent": "Испратена е-пошта",
+	"blockinactive-table-actions": "Дејства",
+	"blockinactive-action-block": "Блокирај",
+	"blockinactive-config-threshold": "За колку дена да сметката станува неактивна",
+	"blockinactive-config-daysblock": "За колку дена да почне блокирањето",
+	"blockinactive-config-warningdaysleft": "За колку дена да се испрати предупредување",
+	"blockinactive-config-mail-subject": "Предупредување! Вашата викисметка наскоро ќе биде блокирана",
+	"blockinactive-config-mail-body": "Вашата викисметка наскоро ќе биде автоматски блокирана поради неактивност. За да го избегнете ова, најавете се на {{SITENAME}}, и со тоа сметката ќе стане повторно активна.",
+	"blockinactive-config-mail-block-subject": "Вашата викисметка е блокирана.",
+	"blockinactive-config-mail-block-body": "Вашата викисметка беше автоматски блокирана поради неактивност. За да си ја повратите, обратете се кај администратор на {{SITENAME}}.",
+	"action-blockinactive": "Блокирање на неактивни сметки",
+	"right-blockinactive": "Блокирање на неактивни сметки",
+	"right-alwaysactive": "Заобиколување на блок за неактивност",
+	"action-alwaysactive": "Заобиколување на блок за неактивност"
+}

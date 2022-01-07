@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Manke ruLpa"
+		]
+	},
+	"blockinactive-desc": "Katrüngepe iney rume konkülewenolu rupan mew kiñe entuantün ñi konküleafel.",
+	"blockinactive": "Katrütungepe pünengenolu kuenta",
+	"blockinactive-table-username": "Pünefe ñi üy",
+	"blockinactive-table-userid": "Pünekelu id",
+	"blockinactive-table-inactivetime": "Chunten mew pünelay",
+	"blockinactive-table-emailsent": "Werküngey may",
+	"blockinactive-table-actions": "Femün",
+	"blockinactive-action-block": "Katrütun",
+	"blockinactive-config-threshold": "Chunten antü ñi trokiwael \"pünekenolu\" tami kuenta",
+	"blockinactive-config-daysblock": "Entuantün ñi katrütufiel",
+	"blockinactive-config-mail-subject": "Kuñiwtulege! Tami kuenta wiki mew müchay katrütungeay",
+	"blockinactive-config-mail-body": "Tami kuenta wiki mew katrütungeay may mi konkülewenon mew. Ñi femgenoael tati, pepi konafuymi {{SITENAME}} mew, feymew may püneaymi tami kuenta ñi katrütungenoam.",
+	"blockinactive-config-mail-block-subject": "Tami kuenta wiki mew katrütungelley",
+	"blockinactive-config-mail-block-body": "Tami kuenta wiki mew trokiwi \"pünekenolu\" feymew katrütungey. Mi konkünuwtuael tami kuenta mew pepi zuguafiymi kiñe {{SITENAME}} ñizolkülelu trokiñ mew.",
+	"action-blockinactive": "Katrütungepe pünengenolu kuenta",
+	"right-blockinactive": "Katrütungepe pünengenolu kuenta",
+	"right-alwaysactive": "Bypass katrütun ñi femmekenon mew",
+	"action-alwaysactive": "Bypass katrütun ñi femmekenon mew"
+}
