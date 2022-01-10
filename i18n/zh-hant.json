@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ericliu1912"
+		]
+	},
+	"blockinactive-table-username": "使用者名稱",
+	"blockinactive-action-block": "封鎖",
+	"action-blockinactive": "封鎖不活躍帳號",
+	"right-blockinactive": "封鎖不活躍帳號"
+}

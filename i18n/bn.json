@@ -4,7 +4,10 @@
 			"Yahya"
 		]
 	},
+	"blockinactive": "নিষ্ক্রিয় অ্যাকাউন্টগুলোকে বাধা দিন",
 	"blockinactive-table-username": "ব্যবহারকারী নাম",
+	"blockinactive-table-inactivetime": "নিষ্ক্রিয় সময়",
 	"blockinactive-table-actions": "পদক্ষেপ",
+	"blockinactive-action-block": "বাধা দান",
 	"blockinactive-config-mail-subject": "সতর্কতা! আপনার উইকি অ্যাকাউন্ট শীঘ্রই বাধাপ্রাপ্ত হবে"
 }

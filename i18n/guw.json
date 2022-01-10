@@ -14,7 +14,8 @@
 	"blockinactive-table-actions": "Nuyiwa lẹ",
 	"blockinactive-action-block": "Sú i",
 	"blockinactive-config-warningdaysleft": "Azan lẹ he gbè avase na yin nina nado sú nudọnamẹ",
-	"blockinactive-config-mail-subject": "Avase! Nudọnamẹ towe he tin to wiki ji na yin susú to madẹnmẹ",
+	"blockinactive-config-mail-subject": "Avase dé die! Nudọnamẹ towe he tin to wiki ji na yin susú to madẹnmẹ",
+	"blockinactive-config-mail-block-subject": "Nudọnamẹ towe to notẹn wiki tọn ji ko yin susú",
 	"action-blockinactive": "Sú nudọnamẹ nọtẹn lọ zantọ he ma to awusọhia lẹ tọn",
 	"right-blockinactive": "Sú nudọnamẹ mẹhe ma to nude wa lẹ tọn"
 }
