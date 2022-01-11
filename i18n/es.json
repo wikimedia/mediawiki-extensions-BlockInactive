@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"MarcoAurelio"
+		]
+	},
+	"blockinactive-desc": "Bloquea a todos los usuarios que no hayan iniciado sesión antes de un determinado número de días desde su último inicio de sesión.",
+	"blockinactive-special-intro": "Más abajo se muestra un listado de usuarios pendientes de bloqueo por inactividad. Los usuarios que no han iniciado sesión desde hace >='''$1''' días serán tratados como usuarios inactivos y serán bloqueados tras '''$2''' días desde su último inicio de sesión. Dichos usuarios recibirán correos electrónicos de advertencia con '''$3''' día(s) de antelación antes de ser bloqueados, así como un correo electrónico informativo tras el bloqueo por inactividad.",
+	"blockinactive": "Bloquear cuentas inactivas",
+	"blockinactive-table-username": "Nombre de usuario",
+	"blockinactive-table-userid": "Identificador del usuario",
+	"blockinactive-table-inactivetime": "Tiempo de inactividad",
+	"blockinactive-table-emailsent": "Correo electrónico enviado",
+	"blockinactive-table-actions": "Acciones",
+	"blockinactive-action-block": "Bloquear",
+	"blockinactive-config-threshold": "Días que han de transcurrir para consider una cuenta como inactiva"
+}
