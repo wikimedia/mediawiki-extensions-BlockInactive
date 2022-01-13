@@ -8,5 +8,8 @@
 	"blockinactive-table-userid": "Benotzer-ID",
 	"blockinactive-table-emailsent": "E-Mail geschéckt",
 	"blockinactive-table-actions": "Aktiounen",
-	"blockinactive-action-block": "Spären"
+	"blockinactive-action-block": "Spären",
+	"blockinactive-config-mail-block-subject": "Äre Wiki-Benotzerkont gouf gespaart",
+	"action-blockinactive": "Inaktiv Konte spären",
+	"right-blockinactive": "Inaktiv Konte spären"
 }
