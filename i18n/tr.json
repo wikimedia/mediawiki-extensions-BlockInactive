@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Can"
+		]
+	},
+	"blockinactive-table-username": "Kullanıcı adı",
+	"blockinactive-table-actions": "Eylemler",
+	"blockinactive-config-mail-subject": "Uyarı! Viki hesabınız yakında engellenecektir"
+}

@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lakejason0"
+			"Lakejason0",
+			"Tranve"
 		]
 	},
-	"blockinactive": "封禁不活跃的账户",
+	"blockinactive": "封禁不活跃的账号",
 	"blockinactive-table-username": "用户名",
 	"blockinactive-table-userid": "用户ID",
 	"blockinactive-table-inactivetime": "不活跃时长"

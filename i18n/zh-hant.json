@@ -1,11 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ericliu1912"
+			"Ericliu1912",
+			"人工知能",
+			"列维劳德"
 		]
 	},
 	"blockinactive-table-username": "使用者名稱",
+	"blockinactive-table-userid": "使用者 id",
+	"blockinactive-table-inactivetime": "不活動時長",
+	"blockinactive-table-emailsent": "已寄出電子郵件",
+	"blockinactive-table-actions": "動作",
 	"blockinactive-action-block": "封鎖",
+	"blockinactive-config-threshold": "將帳戶視為不活動的天數",
+	"blockinactive-config-daysblock": "開始封鎖的天數",
 	"action-blockinactive": "封鎖不活躍帳號",
 	"right-blockinactive": "封鎖不活躍帳號"
 }
