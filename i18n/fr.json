@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Verdy p"
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"blockinactive-desc": "Bloque tous les utilisateurs qui ne se sont pas connectés avant un certain nombre de jours depuis leur dernière connexion.",
@@ -13,7 +14,7 @@
 	"blockinactive-table-emailsent": "Courriel envoyé",
 	"blockinactive-table-actions": "Actions",
 	"blockinactive-action-block": "Bloquer",
-	"blockinactive-config-threshold": "Jours passés pour considérer un compte comme inactif",
+	"blockinactive-config-threshold": "Jours à passer avant de considérer un compte comme inactif",
 	"blockinactive-config-daysblock": "Jours passés avant de commencer le blocage",
 	"blockinactive-config-warningdaysleft": "Jours passés avant d’envoyer un avertissement préalable au blocage",
 	"blockinactive-config-mail-subject": "Attention ! Votre compte wiki sera bientôt bloqué",

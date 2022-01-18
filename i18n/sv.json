@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"blockinactive-desc": "Blockerar alla användare som inte loggat in ett visst antal dagar efter den senaste gången de loggade in.",
+	"blockinactive-special-intro": "Nedan följer en lista över inaktiva användare som kan komma att blockeras. Användare med en sista inloggningsdag på >='''$1''' dagar behandlas som inaktiva och kommer blockeras efter '''$2''' dagar sedan senaste gången de loggade in. De kommer att varnas om detta via e-post '''$3''' dagar innan blockering och får ytterligare ett e-postmeddelande efter den faktiska blockeringen.",
+	"blockinactive": "Blockera inaktiva konton",
+	"blockinactive-table-username": "Användarnamn",
+	"blockinactive-table-userid": "Användar-ID",
+	"blockinactive-table-inactivetime": "Inaktiv tid",
+	"blockinactive-table-emailsent": "E-postmeddelande har skickats",
+	"blockinactive-table-actions": "Åtgärder",
+	"blockinactive-action-block": "Blockera",
+	"blockinactive-config-threshold": "Dagar för att hantera konton som inaktiva",
+	"blockinactive-config-daysblock": "Dagar för att börja blockera",
+	"blockinactive-config-warningdaysleft": "Dagar för att skicka blockeringsvarningar",
+	"blockinactive-config-mail-subject": "Varning! Ditt wikikonton kommer blockeras snart",
+	"blockinactive-config-mail-body": "Ditt konto kommer automatiskt blockeras snart då det varit inaktivt. Logga in på {{SITENAME}} för att undvika detta och göra ditt konto aktivt igen och förhindra blockeringen.",
+	"blockinactive-config-mail-block-subject": "Ditt wikikonto har blockerats",
+	"blockinactive-config-mail-block-body": "Ditt wikikonto har har automatiskt blockerats då det varit inaktivt. Kontakta en systemadministratör på {{SITENAME}} för att återaktivera ditt konto.",
+	"action-blockinactive": "Blockera inaktiva konton",
+	"right-blockinactive": "Blockera inaktiva konton",
+	"right-alwaysactive": "Kringgå blockering för inaktivitet",
+	"action-alwaysactive": "Kringgå blockering för inaktivitet"
+}
