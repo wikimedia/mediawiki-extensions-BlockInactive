@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Annablazeprobable",
-			"Kareyac"
+			"Kareyac",
+			"Okras"
 		]
 	},
 	"blockinactive-desc": "Блокирует всех пользователей, не авторизовавшихся на сайте в течение определенного количества дней с момента последней авторизации.",
 	"blockinactive-table-username": "Имя участника",
+	"blockinactive-table-emailsent": "Письмо отправлено",
 	"blockinactive-table-actions": "Действия"
 }
