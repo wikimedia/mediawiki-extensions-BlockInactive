@@ -4,7 +4,13 @@
 			"Can"
 		]
 	},
+	"blockinactive": "Etkin olmayan hesapları engelle",
 	"blockinactive-table-username": "Kullanıcı adı",
+	"blockinactive-table-userid": "Kullanıcı kimliği",
+	"blockinactive-table-emailsent": "E-posta gönderildi",
 	"blockinactive-table-actions": "Eylemler",
-	"blockinactive-config-mail-subject": "Uyarı! Viki hesabınız yakında engellenecektir"
+	"blockinactive-action-block": "Engelle",
+	"blockinactive-config-mail-subject": "Uyarı! Viki hesabınız yakında engellenecektir",
+	"blockinactive-config-mail-block-subject": "Viki hesabınız engellendi",
+	"action-blockinactive": "Etkin olmayan hesapları engelle"
 }
