@@ -7,6 +7,7 @@
 	"blockinactive": "Etkin olmayan hesapları engelle",
 	"blockinactive-table-username": "Kullanıcı adı",
 	"blockinactive-table-userid": "Kullanıcı kimliği",
+	"blockinactive-table-inactivetime": "Etkin olunmayan zaman",
 	"blockinactive-table-emailsent": "E-posta gönderildi",
 	"blockinactive-table-actions": "Eylemler",
 	"blockinactive-action-block": "Engelle",

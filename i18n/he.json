@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"מקף"
+		]
+	},
+	"blockinactive": "חסימת משתמשים לא פעילים",
+	"blockinactive-table-username": "שם משתמש",
+	"blockinactive-table-userid": "מזהה משתמש",
+	"blockinactive-table-inactivetime": "זמן לא פעיל",
+	"blockinactive-table-emailsent": "דוא\"ל נשלח",
+	"blockinactive-table-actions": "פעולות",
+	"blockinactive-action-block": "חסימה",
+	"blockinactive-config-threshold": "ימים עד להגדרת משתמש כלא פעיל",
+	"blockinactive-config-daysblock": "ימים לתחילת החסימה",
+	"blockinactive-config-warningdaysleft": "ימים לשליחת אזהרת חסימה כאמצעי זהירות",
+	"blockinactive-config-mail-subject": "זהירות! חשבון הוויקי שלך ייחסם בקרוב",
+	"blockinactive-config-mail-body": "חשבון הוויקי שלך ייחסם אוטומטית בקרוב כיוון שהוא אינו פעיל. כדי להימנע מכך, נא להיכנס לאתר {{SITENAME}}, כך שהחשבון שלך יוגדר פעיל והחסימה לא תתרחש.",
+	"blockinactive-config-mail-block-subject": "חשבון הוויקי שלך נחסם",
+	"blockinactive-config-mail-block-body": "חשבון הוויקי שלך נחסם אוטומטית כיוון שהוא לא פעיל. במטרה להחזיר אותו לפעולה, נא ליצור קשר עם מנהל מערכת באתר {{SITENAME}}.",
+	"action-blockinactive": "חסימת משתמשים לא פעילים",
+	"right-blockinactive": "חסימת חשבונות לא פעילים"
+}
