@@ -13,5 +13,6 @@
 	"blockinactive-action-block": "Engelle",
 	"blockinactive-config-mail-subject": "Uyarı! Viki hesabınız yakında engellenecektir",
 	"blockinactive-config-mail-block-subject": "Viki hesabınız engellendi",
+	"blockinactive-config-mail-block-body": "Viki hesabınız, etkin olmadığından beri otomatik olarak engellendi. Hesabınızı eski duruma getirmek için, lüten {{SITENAME}} sistem yöneticisi ile temasa geçiniz.",
 	"action-blockinactive": "Etkin olmayan hesapları engelle"
 }
