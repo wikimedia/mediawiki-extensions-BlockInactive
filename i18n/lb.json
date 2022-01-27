@@ -4,12 +4,18 @@
 			"Robby"
 		]
 	},
+	"blockinactive": "Inaktiv Konte spären",
 	"blockinactive-table-username": "Benotzernumm",
 	"blockinactive-table-userid": "Benotzer-ID",
+	"blockinactive-table-inactivetime": "Dauer vun der Inaktivitéit",
 	"blockinactive-table-emailsent": "E-Mail geschéckt",
 	"blockinactive-table-actions": "Aktiounen",
 	"blockinactive-action-block": "Spären",
+	"blockinactive-config-threshold": "Deeg fir e Benotzerkont als inaktiv anzestufen",
+	"blockinactive-config-mail-subject": "Opgepasst! Äre Wiki-Benotzerkont gëtt geschwënn gespaart.",
 	"blockinactive-config-mail-block-subject": "Äre Wiki-Benotzerkont gouf gespaart",
 	"action-blockinactive": "Inaktiv Konte spären",
-	"right-blockinactive": "Inaktiv Konte spären"
+	"right-blockinactive": "Inaktiv Konte spären",
+	"right-alwaysactive": "Spär duerch Inaktivitéit ëmgoen",
+	"action-alwaysactive": "Spär duerch Inaktivitéit ëmgoen"
 }
