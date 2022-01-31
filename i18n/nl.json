@@ -1,9 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"Nickthijssen1994"
 		]
 	},
 	"blockinactive-table-username": "Gebruikersnaam",
-	"blockinactive-action-block": "Blokkeren"
+	"blockinactive-table-emailsent": "E-mail verzonden",
+	"blockinactive-table-actions": "Acties",
+	"blockinactive-action-block": "Blokkeren",
+	"blockinactive-config-mail-subject": "Waarschuwing! Uw wiki account wordt binnenkort geblokkeerd",
+	"blockinactive-config-mail-block-subject": "Uw wiki account is geblokkeerd",
+	"action-blockinactive": "Inactieve accounts blokkeren",
+	"right-blockinactive": "Inactieve accounts blokkeren"
 }

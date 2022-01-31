@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"blockinactive-desc": "Bloca tote le usatores que non ha aperite session ante que un certe numero de dies ha passate post lor ultime session."
+}

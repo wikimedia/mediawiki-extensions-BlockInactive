@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Can"
+			"Can",
+			"Hedda"
 		]
 	},
+	"blockinactive-desc": "Son girişlerinden bu yana belirli sayıda gün geçmeden giriş yapmayan tüm kullanıcıları engeller.",
 	"blockinactive": "Etkin olmayan hesapları engelle",
 	"blockinactive-table-username": "Kullanıcı adı",
 	"blockinactive-table-userid": "Kullanıcı kimliği",
