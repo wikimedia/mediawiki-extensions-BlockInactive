@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"מקף"
+			"מקף",
+			"ערן"
 		]
 	},
+	"blockinactive-desc": "חסימת כל המשתמשים שלא התחברו לפי מספר ימים מוגדר מאז התחברותם האחרונה",
 	"blockinactive": "חסימת משתמשים לא פעילים",
 	"blockinactive-table-username": "שם משתמש",
 	"blockinactive-table-userid": "מזהה משתמש",
