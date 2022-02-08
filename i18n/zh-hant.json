@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Ericliu1912",
+			"Jonathan5566",
 			"人工知能",
 			"列维劳德"
 		]
 	},
+	"blockinactive": "封鎖不活躍帳號",
 	"blockinactive-table-username": "使用者名稱",
 	"blockinactive-table-userid": "使用者 id",
 	"blockinactive-table-inactivetime": "不活動時長",
@@ -14,6 +16,8 @@
 	"blockinactive-action-block": "封鎖",
 	"blockinactive-config-threshold": "將帳戶視為不活動的天數",
 	"blockinactive-config-daysblock": "開始封鎖的天數",
+	"blockinactive-config-mail-subject": "警告！您的帳號將被封鎖",
+	"blockinactive-config-mail-body": "由於不活躍，您的wiki帳號將被封鎖。您可以登錄{{SITENAME}}來避免封鎖並恢服您帳號的活躍。",
 	"action-blockinactive": "封鎖不活躍帳號",
 	"right-blockinactive": "封鎖不活躍帳號"
 }
