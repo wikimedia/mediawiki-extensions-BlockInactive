@@ -1,9 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jon Harald Søby",
 			"Vukky"
 		]
 	},
 	"blockinactive-table-username": "Brukernavn",
-	"blockinactive-action-block": "Blokker"
+	"blockinactive-table-userid": "Bruker-ID",
+	"blockinactive-table-actions": "Handlinger",
+	"blockinactive-action-block": "Blokker",
+	"action-blockinactive": "Blokkere inaktive kontoer",
+	"right-blockinactive": "Blokkere inaktive kontoer",
+	"right-alwaysactive": "Omgå blokkering for inaktivitet",
+	"action-alwaysactive": "Omgå blokkering for inaktivitet"
 }
