@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"LordProfo"
+		]
+	},
+	"blockinactive-table-username": "نام کاربری",
+	"blockinactive-table-userid": "شناسه کاربری",
+	"blockinactive-table-emailsent": "ایمیل ارسال شد",
+	"blockinactive-action-block": "قطع دسترسی"
+}

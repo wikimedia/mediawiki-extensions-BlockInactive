@@ -3,10 +3,12 @@
 		"authors": [
 			"Ericliu1912",
 			"Jonathan5566",
+			"Madeleinemcc",
 			"人工知能",
 			"列维劳德"
 		]
 	},
+	"blockinactive-desc": "阻止自上次登錄以來有一定天數沒有登錄的所有使用者。",
 	"blockinactive": "封鎖不活躍帳號",
 	"blockinactive-table-username": "使用者名稱",
 	"blockinactive-table-userid": "使用者 id",
@@ -16,8 +18,13 @@
 	"blockinactive-action-block": "封鎖",
 	"blockinactive-config-threshold": "將帳戶視為不活動的天數",
 	"blockinactive-config-daysblock": "開始封鎖的天數",
+	"blockinactive-config-warningdaysleft": "發送封鎖預防警告的天數",
 	"blockinactive-config-mail-subject": "警告！您的帳號將被封鎖",
 	"blockinactive-config-mail-body": "由於不活躍，您的wiki帳號將被封鎖。您可以登錄{{SITENAME}}來避免封鎖並恢服您帳號的活躍。",
+	"blockinactive-config-mail-block-subject": "您的維基百科賬號已被封鎖",
+	"blockinactive-config-mail-block-body": "您的維基百科帳戶因一直處於非活動狀態已被自動封鎖。為了恢復您的帳戶，請用{{SITENAME}}聯繫系統管理員。",
 	"action-blockinactive": "封鎖不活躍帳號",
-	"right-blockinactive": "封鎖不活躍帳號"
+	"right-blockinactive": "封鎖不活躍帳號",
+	"right-alwaysactive": "不活動時忽略封鎖",
+	"action-alwaysactive": "不活動時忽略封鎖"
 }
