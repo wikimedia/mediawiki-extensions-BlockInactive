@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"blockinactive-desc": "Bloqueia todos os utilizadores que não tenham iniciado sessão antes de passar um determinado número de dias desde o seu último início de sessão.",
+	"blockinactive-special-intro": "Encontra abaixo uma lista de utilizadores inativos com bloqueio pendente. Os utilizadores com último início de sessão há mais de '''$1''' dias serão tratados como inativos e bloqueados após '''$2''' dias desde o seu último início de sessão. Receberão mensagens de advertência por correio eletrónico '''$3''' dia(s) antes de serem bloqueados e uma única mensagem depois do bloqueio.",
+	"blockinactive": "Bloquear contas inativas",
+	"blockinactive-table-username": "Nome de utilizador",
+	"blockinactive-table-userid": "Identificador do utilizador",
+	"blockinactive-table-inactivetime": "Período de inatividade",
+	"blockinactive-table-emailsent": "Correio eletrónico enviado",
+	"blockinactive-table-actions": "Operações",
+	"blockinactive-action-block": "Bloquear",
+	"blockinactive-config-threshold": "Dias decorridos para considerar uma conta como inativa",
+	"blockinactive-config-daysblock": "Dias decorridos para começar a bloquear",
+	"blockinactive-config-warningdaysleft": "Dias para enviar o aviso de precaução de bloqueio",
+	"blockinactive-config-mail-subject": "Aviso! A sua conta na wiki será bloqueada em breve",
+	"blockinactive-config-mail-body": "A sua conta será bloqueada automaticamente em breve porque tem estado inativa. Para evitá-lo, inicie uma sessão na wiki {{SITENAME}}, o que tornará a sua conta ativa e evitará o bloqueio.",
+	"blockinactive-config-mail-block-subject": "A sua conta na wiki foi bloqueada",
+	"blockinactive-config-mail-block-body": "A sua conta na wiki foi bloqueada automaticamente, por ter estado inativa. Para recuperar a sua conta contacte um administrador de sistema da wiki {{SITENAME}}.",
+	"action-blockinactive": "Bloquear contas inativas",
+	"right-blockinactive": "Bloquear contas inativas",
+	"right-alwaysactive": "Contornar bloqueios por inatividade",
+	"action-alwaysactive": "Contornar bloqueios por inatividade"
+}

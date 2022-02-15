@@ -5,12 +5,20 @@
 			"Nickthijssen1994"
 		]
 	},
+	"blockinactive-desc": "Blokkeert alle gebruikers die niet inloggen binnen een bepaald aantal dagen sinds hun laatste inlogmoment.",
+	"blockinactive": "Inactieve accounts blokkeren",
 	"blockinactive-table-username": "Gebruikersnaam",
+	"blockinactive-table-userid": "Gebruiker id",
 	"blockinactive-table-emailsent": "E-mail verzonden",
 	"blockinactive-table-actions": "Acties",
 	"blockinactive-action-block": "Blokkeren",
+	"blockinactive-config-threshold": "Dagen voordat account als inactief wordt gezien",
+	"blockinactive-config-daysblock": "Dagen waarna blokkeren te starten",
+	"blockinactive-config-warningdaysleft": "Dagen waarna blokkeer waarschuwing wordt verzonden",
 	"blockinactive-config-mail-subject": "Waarschuwing! Uw wiki account wordt binnenkort geblokkeerd",
+	"blockinactive-config-mail-body": "Uw wiki account wordt binnenkort automatisch geblokkeerd vanwege inactiviteit. Om dit te voorkomen, logt u in op {{SITENAME}}, wat uw account op actief zet en blokkering voorkomt.",
 	"blockinactive-config-mail-block-subject": "Uw wiki account is geblokkeerd",
+	"blockinactive-config-mail-block-body": "Uw wiki account is automatisch geblokkeerd vanwege inactiviteit. Om uw account opnieuw te activeren, kunt u contact opnemen met een {{SITENAME}} systeem administrator.",
 	"action-blockinactive": "Inactieve accounts blokkeren",
 	"right-blockinactive": "Inactieve accounts blokkeren"
 }
