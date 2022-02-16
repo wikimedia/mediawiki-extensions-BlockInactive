@@ -9,6 +9,7 @@
 		]
 	},
 	"blockinactive-desc": "阻止自上次登錄以來有一定天數沒有登錄的所有使用者。",
+	"blockinactive-special-intro": "以下是待阻止的非活動用戶的清單。上次登錄日期>=''$1'的使用者將被視為非活動使用者，並將在上次登錄后的\"$2\"天后被阻止。在被阻止之前，他們將收到\"$3\"的警告電子郵件，並在實際阻止後收到一封電子郵件。",
 	"blockinactive": "封鎖不活躍帳號",
 	"blockinactive-table-username": "使用者名稱",
 	"blockinactive-table-userid": "使用者 id",
