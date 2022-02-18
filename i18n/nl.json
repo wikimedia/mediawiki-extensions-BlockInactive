@@ -6,9 +6,11 @@
 		]
 	},
 	"blockinactive-desc": "Blokkeert alle gebruikers die niet inloggen binnen een bepaald aantal dagen sinds hun laatste inlogmoment.",
+	"blockinactive-special-intro": "In onderstaande lijst staan de gebruikers die in afwachting zijn om geblokkeerd te worden vanwege inactiviteit. Gebruikers met een laatste logindatum >='''$1''' dagen worden gezien als inactief en worden geblokkeerd na '''$2''' dagen vanaf hun laatste inlog moment. Zij ontvangen '''$3''' dag(en) van tevoren waarschuwingsmails en een bevestigingsmail na de daadwerkelijke blokkade.",
 	"blockinactive": "Inactieve accounts blokkeren",
 	"blockinactive-table-username": "Gebruikersnaam",
 	"blockinactive-table-userid": "Gebruiker id",
+	"blockinactive-table-inactivetime": "Tijd inactief",
 	"blockinactive-table-emailsent": "E-mail verzonden",
 	"blockinactive-table-actions": "Acties",
 	"blockinactive-action-block": "Blokkeren",
@@ -20,5 +22,7 @@
 	"blockinactive-config-mail-block-subject": "Uw wiki account is geblokkeerd",
 	"blockinactive-config-mail-block-body": "Uw wiki account is automatisch geblokkeerd vanwege inactiviteit. Om uw account opnieuw te activeren, kunt u contact opnemen met een {{SITENAME}} systeem administrator.",
 	"action-blockinactive": "Inactieve accounts blokkeren",
-	"right-blockinactive": "Inactieve accounts blokkeren"
+	"right-blockinactive": "Inactieve accounts blokkeren",
+	"right-alwaysactive": "Blokkeren vanwege inactiviteit omzeilen",
+	"action-alwaysactive": "Blokkeren vanwege inactiviteit omzeilen"
 }
