@@ -9,6 +9,8 @@
 	},
 	"blockinactive-desc": "Блокирует всех пользователей, не аутентифицировавшихся на сайте в течение определённого количества дней с момента последней аутентификации.",
 	"blockinactive-table-username": "Имя участника",
+	"blockinactive-table-inactivetime": "Время неактивности",
 	"blockinactive-table-emailsent": "Письмо отправлено",
-	"blockinactive-table-actions": "Действия"
+	"blockinactive-table-actions": "Действия",
+	"blockinactive-action-block": "Заблокировать"
 }

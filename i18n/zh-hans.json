@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"500000000006城",
 			"Lakejason0",
 			"Tranve",
 			"Wzl19371"
 		]
 	},
+	"blockinactive-desc": "‎封禁所有自上次登录发生以来一定天数内未登录的用户。‎",
 	"blockinactive": "封禁不活跃的账号",
 	"blockinactive-table-username": "用户名",
 	"blockinactive-table-userid": "用户ID",
