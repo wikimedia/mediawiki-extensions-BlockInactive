@@ -1,8 +1,28 @@
 {
 	"@metadata": {
 		"authors": [
+			"Juan90264",
 			"Wiiformii"
 		]
 	},
-	"blockinactive-config-mail-block-subject": "A sua conta foi bloqueada"
+	"blockinactive-desc": "Bloqueia todos os usuários que não fizerem login antes de um certo número de dias desde o último login.",
+	"blockinactive-special-intro": "Abaixo está a lista de usuários inativos pendentes a serem bloqueados. Usuários com data de último login >='''$1''' dias são tratados como inativos e serão bloqueados após '''$2''' dias desde seu último login. Eles receberão e-mails de aviso '''$3''' dia(s) antes de serem bloqueados e um único e-mail após o bloqueio real.",
+	"blockinactive": "Bloquear contas inativas",
+	"blockinactive-table-username": "Nome de usuário",
+	"blockinactive-table-userid": "Identificador do usuário",
+	"blockinactive-table-inactivetime": "Período de inatividade",
+	"blockinactive-table-emailsent": "E-mail enviado",
+	"blockinactive-table-actions": "Ações",
+	"blockinactive-action-block": "Bloquear",
+	"blockinactive-config-threshold": "Dias para tratar a conta como inativa",
+	"blockinactive-config-daysblock": "Dias para começar a bloquear",
+	"blockinactive-config-warningdaysleft": "Dias para enviar aviso de precaução de bloqueio",
+	"blockinactive-config-mail-subject": "Aviso! Sua conta wiki será bloqueada em breve",
+	"blockinactive-config-mail-body": "Sua conta wiki será bloqueada automaticamente em breve, pois está inativa. Para evitar isso, faça login em {{SITENAME}}, o que tornará sua conta ativa e evitará que o bloqueio ocorra.",
+	"blockinactive-config-mail-block-subject": "A sua conta foi bloqueada",
+	"blockinactive-config-mail-block-body": "Sua conta wiki foi bloqueada automaticamente por estar inativa. Para restabelecer sua conta, entre em contato com um administrador do sistema {{SITENAME}}.",
+	"action-blockinactive": "Bloquear contas inativas",
+	"right-blockinactive": "Bloquear contas inativas",
+	"right-alwaysactive": "Contornar bloqueios por inatividade",
+	"action-alwaysactive": "Contornar bloqueios por inatividade"
 }
