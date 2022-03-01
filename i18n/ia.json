@@ -5,5 +5,15 @@
 		]
 	},
 	"blockinactive-desc": "Bloca tote le usatores que non ha aperite session ante que un certe numero de dies ha passate post lor ultime session.",
-	"blockinactive-special-intro": "Ecce le lista de usatores inactive que attende esser blocate. Le usatores con un ultime data de session >='''$1''' se tracta como inactive e essera blocate '''$2''' dies post lor ultime session. Illes recipera advertimentos in e-mail '''$3''' die(s) ante de esser blocate e un sol message de e-mail post le blocada effective."
+	"blockinactive-special-intro": "Ecce le lista de usatores inactive que attende esser blocate. Le usatores con un ultime data de session >='''$1''' se tracta como inactive e essera blocate '''$2''' dies post lor ultime session. Illes recipera advertimentos in e-mail '''$3''' die(s) ante de esser blocate e un sol message de e-mail post le blocada effective.",
+	"blockinactive": "Blocar contos inactive",
+	"blockinactive-table-username": "Nomine de usator",
+	"blockinactive-table-userid": "ID del usator",
+	"blockinactive-table-inactivetime": "Periodo de inactivitate",
+	"blockinactive-table-emailsent": "E-mail inviate",
+	"blockinactive-table-actions": "Actiones",
+	"blockinactive-action-block": "Blocar",
+	"blockinactive-config-threshold": "Dies a passar ante de considerar le conto como inactive",
+	"blockinactive-config-daysblock": "Dies a passar ante de comenciar a blocar",
+	"blockinactive-config-warningdaysleft": "Dies a passar ante de inviar le advertimento de blocada"
 }
