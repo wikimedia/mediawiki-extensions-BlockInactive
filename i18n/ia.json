@@ -15,5 +15,13 @@
 	"blockinactive-action-block": "Blocar",
 	"blockinactive-config-threshold": "Dies a passar ante de considerar le conto como inactive",
 	"blockinactive-config-daysblock": "Dies a passar ante de comenciar a blocar",
-	"blockinactive-config-warningdaysleft": "Dies a passar ante de inviar le advertimento de blocada"
+	"blockinactive-config-warningdaysleft": "Dies a passar ante de inviar le advertimento de blocada",
+	"blockinactive-config-mail-subject": "Attention! Tu conto wiki essera tosto blocate",
+	"blockinactive-config-mail-body": "Tu conto wiki essera tosto blocate automaticamente a causa de inactivitate. A fin de evitar isto, per favor aperi session in {{SITENAME}}, lo que rendera tu conto active e impedira le blocada.",
+	"blockinactive-config-mail-block-subject": "Tu conto wiki ha essite blocate",
+	"blockinactive-config-mail-block-body": "Tu conto wiki ha essite automaticamente blocate a causa de inactivitate. A fin de reactivar tu conto, per favor contacta un administrator de systema de {{SITENAME}}.",
+	"action-blockinactive": "Blocar contos inactive",
+	"right-blockinactive": "Blocar contos inactive",
+	"right-alwaysactive": "Ultrapassar blocage pro inactivitate",
+	"action-alwaysactive": "Ultrapassar blocage pro inactivitate"
 }
