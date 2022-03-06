@@ -9,14 +9,14 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extensions\\BlockInactive\\": "includes/"
+		"MediaWiki\\Extension\\BlockInactive\\": "includes/"
 	},
 	"AutoloadClasses": {
-		"MediaWiki\\Extensions\\BlockInactive\\BlockInactiveMaintenance": "maintenance/blockinactive.php"
+		"MediaWiki\\Extension\\BlockInactive\\BlockInactiveMaintenance": "maintenance/blockinactive.php"
 	},
 	"Hooks": {
-		"UserLoginComplete": "MediaWiki\\Extensions\\BlockInactive\\BlockInactiveHooks::onUserLoginComplete",
-		"LoadExtensionSchemaUpdates": "MediaWiki\\Extensions\\BlockInactive\\BlockInactiveHooks::onLoadExtensionSchemaUpdates"
+		"UserLoginComplete": "MediaWiki\\Extension\\BlockInactive\\BlockInactiveHooks::onUserLoginComplete",
+		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\BlockInactive\\BlockInactiveHooks::onLoadExtensionSchemaUpdates"
 	},
 	"MessagesDirs": {
 		"BlockInactive": [
@@ -24,7 +24,7 @@
 		]
 	},
 	"SpecialPages": {
-		"BlockInactive": "MediaWiki\\Extensions\\BlockInactive\\SpecialBlockInactive"
+		"BlockInactive": "MediaWiki\\Extension\\BlockInactive\\SpecialBlockInactive"
 	},
 	"ExtensionMessagesFiles": {
 		"BlockInactiveAlias": "includes/BlockInactive.alias.php"

@@ -1,12 +1,12 @@
 <?php
 
-namespace MediaWiki\Extensions\BlockInactive;
+namespace MediaWiki\Extension\BlockInactive;
 
 use MediaWikiIntegrationTestCase;
 use User;
 
 /**
- * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive
+ * @covers \MediaWiki\Extension\BlockInactive\BlockInactive
  * @group Database
  * @group medium
  */
@@ -18,7 +18,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive::getQuery
+	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::getQuery
 	 */
 	public function testGetQuery() {
 		$threshold = 10000;
@@ -33,7 +33,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive::skipUser
+	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::skipUser
 	 */
 	public function testSkipUser() {
 		$this->assertFalse(
@@ -49,7 +49,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive::getInactiveUsers
+	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::getInactiveUsers
 	 */
 	public function testGetInactiveUsers() {
 		// Clean up the test user database (that's safe)
@@ -113,7 +113,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive::getThreshold
+	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::getThreshold
 	 */
 	public function testGetThreshold() {
 		$this->setMwGlobals( [
@@ -126,7 +126,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive::getWarningSchedule
+	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::getWarningSchedule
 	 */
 	public function testGetWarningSchedule() {
 		$this->setMwGlobals( [
@@ -149,7 +149,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive::timeLeft
+	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::timeLeft
 	 */
 	public function testTimeLeft() {
 		$this->setMwGlobals( [
@@ -191,7 +191,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive::daysLeft
+	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::daysLeft
 	 */
 	public function testDaysLeft() {
 		$this->setMwGlobals( [
@@ -217,7 +217,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive::getUserBlockTime
+	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::getUserBlockTime
 	 */
 	public function testGetUserBlockTime() {
 		$this->setMwGlobals( [
@@ -235,7 +235,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive::blockUser
+	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::blockUser
 	 */
 	public function testBlockUser() {
 		// Ignores invalid
@@ -285,7 +285,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive::hasPendingWarnings
+	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::hasPendingWarnings
 	 */
 	public function testHasPendingWarnings() {
 		$this->setMwGlobals( [
@@ -310,7 +310,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers \MediaWiki\Extensions\BlockInactive\BlockInactive::getWarningsMissed
+	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::getWarningsMissed
 	 */
 	public function testGetWarningsMissed() {
 		$this->setMwGlobals( [

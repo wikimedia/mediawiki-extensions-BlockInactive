@@ -1,6 +1,6 @@
 <?php
 
-namespace MediaWiki\Extensions\BlockInactive;
+namespace MediaWiki\Extension\BlockInactive;
 
 use ManualLogEntry;
 use MediaWiki\Block\DatabaseBlock;
