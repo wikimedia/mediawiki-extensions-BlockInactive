@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"FiberAhmed",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
-	"blockinactive-table-username": "اسم المستخدم"
+	"blockinactive-table-username": "اسم المستخدم",
+	"blockinactive-table-userid": "معرف المستخدم",
+	"blockinactive-table-emailsent": "أُرسل البريد الإلكتروني",
+	"blockinactive-table-actions": "الإجراءات",
+	"blockinactive-action-block": "حظر"
 }
