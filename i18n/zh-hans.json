@@ -3,6 +3,7 @@
 		"authors": [
 			"500000000006城",
 			"Lakejason0",
+			"StarrySky",
 			"Tranve",
 			"Wzl19371"
 		]
@@ -15,6 +16,8 @@
 	"blockinactive-table-emailsent": "电子邮件已发送",
 	"blockinactive-table-actions": "操作",
 	"blockinactive-action-block": "封禁",
+	"blockinactive-config-daysblock": "开始封锁的天数",
+	"blockinactive-config-mail-subject": "警告！ 您的 wiki 帐户将很快被封锁",
 	"blockinactive-config-mail-block-subject": "您的wiki账户被封禁",
 	"action-blockinactive": "封禁不活跃的账号",
 	"right-blockinactive": "封禁不活跃的账号"
