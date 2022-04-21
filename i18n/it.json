@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"IrsY"
+			"IrsY",
+			"GpieroMW"
 		]
 	},
 	"blockinactive": "Blocco utenze inattive",
@@ -11,5 +12,8 @@
 	"blockinactive-table-inactivetime": "Tempo di inattività",
 	"blockinactive-table-emailsent": "Messaggio inviato",
 	"blockinactive-table-actions": "Azioni",
-	"blockinactive-action-block": "Blocca"
+	"blockinactive-action-block": "Blocca",
+	"blockinactive-config-mail-subject": "Attenzione! La tua utenza wiki sarà bloccata presto",
+	"action-blockinactive": "bloccare utenze inattive",
+	"right-blockinactive": "Blocca utenze inattive"
 }

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"WikiWorks team"
+			"WikiWorks team",
+			"Amire80"
 		]
 	},
 	"blockinactive-desc": "BlockInactive extension description",
@@ -21,8 +22,8 @@
 	"blockinactive-config-mail-body": "Text for account expiration warning email",
 	"blockinactive-config-mail-block-subject": "Subject for account blocking warning email",
 	"blockinactive-config-mail-block-body": "Text for account blocking warning email",
-	"action-blockinactive": "blockinactive action description",
-	"right-blockinactive": "blockinactive right- description",
-	"right-alwaysactive": "alwaysactive right- description",
-	"action-alwaysactive": "alwaysactive action description"
+	"action-blockinactive": "{{Doc-action}}",
+	"right-blockinactive": "{{Doc-right}}",
+	"right-alwaysactive": "{{Doc-right}}",
+	"action-alwaysactive": "{{Doc-action}}"
 }

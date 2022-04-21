@@ -22,6 +22,8 @@
 	"blockinactive-config-mail-body": "חשבון הוויקי שלך ייחסם אוטומטית בקרוב כיוון שהוא אינו פעיל. כדי להימנע מכך, נא להיכנס לאתר {{SITENAME}}, כך שהחשבון שלך יוגדר פעיל והחסימה לא תתרחש.",
 	"blockinactive-config-mail-block-subject": "חשבון הוויקי שלך נחסם",
 	"blockinactive-config-mail-block-body": "חשבון הוויקי שלך נחסם אוטומטית כיוון שהוא לא פעיל. במטרה להחזיר אותו לפעולה, נא ליצור קשר עם מנהל מערכת באתר {{SITENAME}}.",
-	"action-blockinactive": "חסימת משתמשים לא פעילים",
-	"right-blockinactive": "חסימת חשבונות לא פעילים"
+	"action-blockinactive": "לחסום משתמשים לא פעילים",
+	"right-blockinactive": "חסימת חשבונות לא פעילים",
+	"right-alwaysactive": "עקיפת חסימה בשל חוסר־פעילות",
+	"action-alwaysactive": "לעקוף חסימה בשל חוסר־פעילות"
 }
