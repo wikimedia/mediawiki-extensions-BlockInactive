@@ -3,6 +3,7 @@
 		"authors": [
 			"Can",
 			"Hedda",
+			"Joseph",
 			"Sayginer"
 		]
 	},
@@ -14,6 +15,7 @@
 	"blockinactive-table-emailsent": "E-posta gönderildi",
 	"blockinactive-table-actions": "Eylemler",
 	"blockinactive-action-block": "Engelle",
+	"blockinactive-config-threshold": "Hesabı etkin değil saymak için gereken günler",
 	"blockinactive-config-mail-subject": "Uyarı! Viki hesabınız yakında engellenecektir",
 	"blockinactive-config-mail-block-subject": "Viki hesabınız engellendi",
 	"blockinactive-config-mail-block-body": "Viki hesabınız, etkin olmadığından beri otomatik olarak engellendi. Hesabınızı eski duruma getirmek için, lüten {{SITENAME}} sistem yöneticisi ile temasa geçiniz.",
