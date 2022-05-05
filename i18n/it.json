@@ -14,7 +14,11 @@
 	"blockinactive-table-actions": "Azioni",
 	"blockinactive-action-block": "Blocca",
 	"blockinactive-config-mail-subject": "Attenzione! La tua utenza wiki sarà bloccata presto",
+	"blockinactive-config-mail-body": "La tua utenza wiki sarà bloccata a breve a motivo dello stato inattivo. Per evitare il blocco, si prega di effettuare l'accesso a {{SITENAME}}, che renderà l'utenza nuovamente attiva impedendone il blocco.",
+	"blockinactive-config-mail-block-subject": "La tua utenza è stata bloccata",
 	"blockinactive-config-mail-block-body": "La tua utenza wiki è stata bloccata automaticamente perché inattiva. Per riattivare la tua utenza, contatta un amministratore di sistema {{SITENAME}}.",
 	"action-blockinactive": "bloccare utenze inattive",
-	"right-blockinactive": "Blocca utenze inattive"
+	"right-blockinactive": "Blocca utenze inattive",
+	"right-alwaysactive": "Evita il blocco per inattività",
+	"action-alwaysactive": "evitare il blocco per inattività"
 }
