@@ -18,6 +18,8 @@ and setup a schedule for warning messages to be sent prior to blocking.
 * Add `wfLoadExtension( 'BlockInactive' )` to the bottom of your `LocalSettings.php`
 * Run `php maintenance/update.php --quick`
 * Configure `cron` to run `BlockInactive/maintenance/blockinactive.php` script `@daily`
+  * `--delay` - parameter allows to specify delay (in seconds) between outgoing emails
+  * `--dry` - parameter runs script in dry mode not performing any email sending or blocks
 * Navigate to `Special:BlockInactive` to see details
 
 # Configure

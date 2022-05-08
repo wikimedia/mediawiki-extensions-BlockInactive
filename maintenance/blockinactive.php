@@ -21,12 +21,15 @@ class BlockInactiveMaintenance extends Maintenance {
 		$this->addOption( 'dry', 'Runs a dry-run operations, no mails will be sent, no blocks will happen' );
 		$this->addOption( 'noblock', 'No blocks will actually happen, mails will be sent' );
 		$this->addOption( 'filter', 'Only do actions on the given usernames', false, true );
+		$this->addOption( 'delay', 'Pause between emails, in seconds', false, true );
 	}
 
 	public function execute() {
 		$dry = $this->hasOption( 'dry' );
 		$noblock = $this->hasOption( 'noblock' );
 		$filter = $this->getOption( 'filter' );
+		$delay = (int)$this->getOption( 'delay' );
+
 		$filterUsersAr = [];
 		$this->output( "Running at " . date( 'F j, Y, g:i a', time() ) );
 
@@ -59,6 +62,8 @@ class BlockInactiveMaintenance extends Maintenance {
 			. " ] days " );
 		$this->output( "\n------\n" );
 
+		$anyEmailSent = false;
+
 		// Iterate inactive users
 		foreach ( $inactiveUsers as $inactiveUser ) {
 
@@ -66,6 +71,11 @@ class BlockInactiveMaintenance extends Maintenance {
 				if ( !in_array( $inactiveUser->getName(), $filterUsersAr ) ) {
 					continue;
 				}
+			}
+
+			if ( $anyEmailSent && $delay ) {
+				sleep( $delay );
+				$anyEmailSent = false;
 			}
 
 			$daysLeftUntilBlock = BlockInactive::getInstance()->daysLeft( $inactiveUser );
@@ -90,9 +100,12 @@ class BlockInactiveMaintenance extends Maintenance {
 				$this->output( "\n\tSending blocking email to " . $inactiveUser->getEmail() );
 				if ( !$dry ) {
 					$this->sendBlockEmail( $inactiveUser );
+					$anyEmailSent = true;
 					if ( !$noblock ) {
 						BlockInactive::getInstance()->blockUser( $inactiveUser );
 					}
+				} else {
+					$this->output( "\n\tNot actually sending in DRY-mode, not blocking in DRY-mode" );
 				}
 				$this->output( "\n\tDone!" );
 				continue;
@@ -118,12 +131,15 @@ class BlockInactiveMaintenance extends Maintenance {
 					. $inactiveUser->getEmail() );
 				if ( !$dry ) {
 					$status = $this->sendWarningEmail( $inactiveUser, $recentMissing['ts'] );
+					$anyEmailSent = true;
 					// Status check
 					if ( $status->isGood() ) {
 						$this->output( "\n\tSMTP OK" );
 					} else {
 						$this->output( "\n\tSMTP FAIL: " . $status->getMessage() );
 					}
+				} else {
+					$this->output( "\n\tNot actually sending in DRY-mode" );
 				}
 				continue;
 			}
@@ -137,12 +153,15 @@ class BlockInactiveMaintenance extends Maintenance {
 				$this->output( "\n\tSending warning email to " . $inactiveUser->getEmail() );
 				if ( !$dry ) {
 					$status = $this->sendWarningEmail( $inactiveUser );
+					$anyEmailSent = true;
 					// Status check
 					if ( $status->isGood() ) {
 						$this->output( "\n\tSMTP OK" );
 					} else {
 						$this->output( "\n\tSMTP FAIL: " . $status->getMessage() );
 					}
+				} else {
+					$this->output( "\n\tNot actually sending in DRY-mode" );
 				}
 			}
 		}
