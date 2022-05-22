@@ -20,8 +20,8 @@
 	"blockinactive-config-mail-body": "Your wiki account will be automatically blocked soon since it has been inactive. In order to avoid this, please log in to {{SITENAME}}, which will make your account active and prevent the block from occurring.",
 	"blockinactive-config-mail-block-subject": "Your wiki account has been blocked",
 	"blockinactive-config-mail-block-body": "Your wiki account has been automatically blocked since it has been inactive. In order to reinstate your account, please contact a {{SITENAME}} system administrator.",
-	"action-blockinactive": "Block inactive accounts",
+	"action-blockinactive": "block inactive accounts",
 	"right-blockinactive": "Block inactive accounts",
 	"right-alwaysactive": "Bypass blocking for inactivity",
-	"action-alwaysactive": "Bypass blocking for inactivity"
+	"action-alwaysactive": "bypass blocking for inactivity"
 }
