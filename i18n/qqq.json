@@ -3,6 +3,7 @@
 		"authors": [
 			"Amire80",
 			"Robby",
+			"Shirayuki",
 			"WikiWorks team"
 		]
 	},
@@ -22,8 +23,8 @@
 	"blockinactive-config-mail-body": "Text for account expiration warning email",
 	"blockinactive-config-mail-block-subject": "Subject for account blocking warning email",
 	"blockinactive-config-mail-block-body": "Text for account blocking warning email",
-	"action-blockinactive": "{{Doc-action}}",
-	"right-blockinactive": "{{Doc-right}}",
-	"right-alwaysactive": "{{Doc-right}}",
-	"action-alwaysactive": "{{Doc-action}}"
+	"action-blockinactive": "{{doc-action|blockinactive}}",
+	"right-blockinactive": "{{doc-right|blockinactive}}",
+	"right-alwaysactive": "{{doc-right|alwaysactive}}",
+	"action-alwaysactive": "{{doc-action|alwaysactive}}"
 }

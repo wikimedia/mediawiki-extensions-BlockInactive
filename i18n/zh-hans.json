@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"500000000006城",
+			"GuoPC",
 			"Lakejason0",
 			"StarrySky",
 			"Tranve",
@@ -20,5 +21,6 @@
 	"blockinactive-config-mail-subject": "警告！ 您的 wiki 帐户将很快被封锁",
 	"blockinactive-config-mail-block-subject": "您的wiki账户被封禁",
 	"action-blockinactive": "封禁不活跃的账号",
-	"right-blockinactive": "封禁不活跃的账号"
+	"right-blockinactive": "封禁不活跃的账号",
+	"action-alwaysactive": "绕过不活跃封禁"
 }

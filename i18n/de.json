@@ -18,8 +18,8 @@
 	"blockinactive-config-mail-body": "Dein Wiki-Account wird demnächst automatisch gesperrt, da er inaktiv war. Um dies zu vermeiden, melde dich bitte auf {{SITENAME}} an, wodurch dein Konto aktiv wird und die Sperrung verhindert wird.",
 	"blockinactive-config-mail-block-subject": "Dein Benutzerkonto wurde gesperrt",
 	"blockinactive-config-mail-block-body": "Dein Wiki-Account wurde automatisch gesperrt, da er inaktiv war. Um ein Konto wieder zu aktivieren, kontaktiere bitte einen {{SITENAME}}-Systemadministrator.",
-	"action-blockinactive": "Inaktive Konten sperren",
+	"action-blockinactive": "inaktive Konten sperren",
 	"right-blockinactive": "Inaktive Konten sperren",
 	"right-alwaysactive": "Umgehung der Sperrung bei Inaktivität",
-	"action-alwaysactive": "Umgehung der Sperrung bei Inaktivität"
+	"action-alwaysactive": "umgehen der Sperrung bei Inaktivität"
 }

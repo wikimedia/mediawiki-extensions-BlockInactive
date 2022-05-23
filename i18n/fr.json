@@ -21,8 +21,8 @@
 	"blockinactive-config-mail-body": "Votre compte wiki sera bientôt automatiquement bloqué puisqu’il est resté inactif. Afin d’éviter ceci, veuillez vous connecter sur {{SITENAME}}, afin de rendre votre compte comme actif et d’éviter son blocage.",
 	"blockinactive-config-mail-block-subject": "Votre compte wiki a été bloqué",
 	"blockinactive-config-mail-block-body": "Votre compte wiki a été bloqué automatiquement puisqu’il est resté inactif. Afin de réactiver votre compte, veuillez contacter un administrateur système de {{SITENAME}}.",
-	"action-blockinactive": "Bloquer les comptes inactifs",
+	"action-blockinactive": "bloquer les comptes inactifs",
 	"right-blockinactive": "Bloquer les comptes inactifs",
 	"right-alwaysactive": "Outrepasser le blocage pour cause d’inactivité",
-	"action-alwaysactive": "Outrepasser le blocage pour cause d’inactivité"
+	"action-alwaysactive": "outrepasser le blocage pour cause d’inactivité"
 }
