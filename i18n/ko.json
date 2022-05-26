@@ -17,8 +17,8 @@
 	"blockinactive-config-warningdaysleft": "차단에 대한 사전 주의 경고를 보낼 날짜",
 	"blockinactive-config-mail-subject": "경고! 위키 계정이 곧 차단됩니다.",
 	"blockinactive-config-mail-block-subject": "당신의 위키 계정이 차단되었습니다",
-	"action-blockinactive": "비활성 계정들을 차단합니다.",
+	"action-blockinactive": "비활성 계정들을 차단할",
 	"right-blockinactive": "비활성 계정들을 차단합니다.",
 	"right-alwaysactive": "비활성화 차단을 우회합니다.",
-	"action-alwaysactive": "비활성화 차단 우회"
+	"action-alwaysactive": "비활성화 차단을 우회할"
 }
