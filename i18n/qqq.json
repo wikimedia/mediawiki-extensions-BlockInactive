@@ -3,7 +3,8 @@
 		"authors": [
 			"Robby",
 			"WikiWorks team",
-			"Amire80"
+			"Amire80",
+			"Shirayuki"
 		]
 	},
 	"blockinactive-desc": "BlockInactive extension description",
@@ -23,7 +24,7 @@
 	"blockinactive-config-mail-block-subject": "Subject for account blocking warning email",
 	"blockinactive-config-mail-block-body": "Text for account blocking warning email",
 	"action-blockinactive": "{{Doc-action}}",
-	"right-blockinactive": "{{Doc-right}}",
-	"right-alwaysactive": "{{Doc-right}}",
+	"right-blockinactive": "{{doc-right|blockinactive}}",
+	"right-alwaysactive": "{{doc-right|alwaysactive}}",
 	"action-alwaysactive": "{{Doc-action}}"
 }
