@@ -4,7 +4,8 @@
 			"Annablazeprobable",
 			"Base",
 			"Kareyac",
-			"Okras"
+			"Okras",
+			"WindEwriX"
 		]
 	},
 	"blockinactive-desc": "Блокирует всех пользователей, не аутентифицировавшихся на сайте в течение определённого количества дней с момента последней аутентификации.",
@@ -12,5 +13,6 @@
 	"blockinactive-table-inactivetime": "Время неактивности",
 	"blockinactive-table-emailsent": "Письмо отправлено",
 	"blockinactive-table-actions": "Действия",
-	"blockinactive-action-block": "Заблокировать"
+	"blockinactive-action-block": "Заблокировать",
+	"blockinactive-config-mail-block-subject": "Ваша учётная запись была заблокирована"
 }

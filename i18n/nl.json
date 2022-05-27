@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
+			"McDutchie",
 			"Nickthijssen1994"
 		]
 	},
@@ -21,8 +22,8 @@
 	"blockinactive-config-mail-body": "Uw wiki account wordt binnenkort automatisch geblokkeerd vanwege inactiviteit. Om dit te voorkomen, logt u in op {{SITENAME}}, wat uw account op actief zet en blokkering voorkomt.",
 	"blockinactive-config-mail-block-subject": "Uw wiki account is geblokkeerd",
 	"blockinactive-config-mail-block-body": "Uw wiki account is automatisch geblokkeerd vanwege inactiviteit. Om uw account opnieuw te activeren, kunt u contact opnemen met een {{SITENAME}} systeem administrator.",
-	"action-blockinactive": "Inactieve accounts blokkeren",
+	"action-blockinactive": "inactieve accounts te blokkeren",
 	"right-blockinactive": "Inactieve accounts blokkeren",
 	"right-alwaysactive": "Blokkeren vanwege inactiviteit omzeilen",
-	"action-alwaysactive": "Blokkeren vanwege inactiviteit omzeilen"
+	"action-alwaysactive": "het blokkeren vanwege inactiviteit te omzeilen"
 }
