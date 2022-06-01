@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Agusbou2015",
+			"Francodiaz7",
 			"MarcoAurelio"
 		]
 	},
@@ -21,7 +22,7 @@
 	"blockinactive-config-mail-body": "Tu cuenta wiki se bloqueará automáticamente en breve ya que ha estado inactiva. Para evitarlo, inicia sesión en {{SITENAME}}, lo que hará que tu cuenta esté activa y evitará que se produzca el bloqueo.",
 	"blockinactive-config-mail-block-subject": "Tu cuenta wiki ha sido bloqueada",
 	"blockinactive-config-mail-block-body": "Tu cuenta wiki ha sido bloqueada automáticamente por estar inactiva. Para restablecer tu cuenta, ponte en contacto con un administrador del sistema de {{SITENAME}}.",
-	"action-blockinactive": "Bloquear las cuentas inactivas",
+	"action-blockinactive": "Bloquear cuentas inactivas",
 	"right-blockinactive": "Bloquear cuentas inactivas",
 	"right-alwaysactive": "Eludir bloqueos por inactividad",
 	"action-alwaysactive": "Evitar el bloqueo por inactividad"
