@@ -4,7 +4,8 @@
 			"Amire80",
 			"Robby",
 			"Shirayuki",
-			"WikiWorks team"
+			"WikiWorks team",
+			"孟天皓"
 		]
 	},
 	"blockinactive-desc": "BlockInactive extension description",
@@ -16,7 +17,7 @@
 	"blockinactive-table-emailsent": "emailsent column",
 	"blockinactive-table-actions": "actions column\n{{identical|Action}}",
 	"blockinactive-action-block": "block action\n{{identical|Block}}",
-	"blockinactive-config-threshold": "threshold setting",
+	"blockinactive-config-threshold": "将帐户视为非活动帐户的天数",
 	"blockinactive-config-daysblock": "daysblock setting",
 	"blockinactive-config-warningdaysleft": "warningdaysleft setting",
 	"blockinactive-config-mail-subject": "Subject for account expiration warning email",

@@ -6,7 +6,8 @@
 			"Lakejason0",
 			"StarrySky",
 			"Tranve",
-			"Wzl19371"
+			"Wzl19371",
+			"孟天皓"
 		]
 	},
 	"blockinactive-desc": "‎封禁所有自上次登录发生以来一定天数内未登录的用户。‎",
@@ -17,6 +18,7 @@
 	"blockinactive-table-emailsent": "电子邮件已发送",
 	"blockinactive-table-actions": "操作",
 	"blockinactive-action-block": "封禁",
+	"blockinactive-config-threshold": "将帐户视为非活动帐户的天数",
 	"blockinactive-config-daysblock": "开始封锁的天数",
 	"blockinactive-config-mail-subject": "警告！ 您的 wiki 帐户将很快被封锁",
 	"blockinactive-config-mail-block-subject": "您的wiki账户被封禁",
