@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Asma",
 			"FiberAhmed",
 			"أَحمد",
 			"محمد أحمد عبد الفتاح"
@@ -10,5 +11,6 @@
 	"blockinactive-table-userid": "معرف المستخدم",
 	"blockinactive-table-emailsent": "أُرسل البريد الإلكتروني",
 	"blockinactive-table-actions": "الإجراءات",
-	"blockinactive-action-block": "حظر"
+	"blockinactive-action-block": "حظر",
+	"action-blockinactive": "حظر الحسابات غير النشطة"
 }
