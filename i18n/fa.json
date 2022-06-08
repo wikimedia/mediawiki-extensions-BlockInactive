@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Beginneruser",
+			"Jeeputer",
 			"LordProfo"
 		]
 	},
@@ -13,5 +14,5 @@
 	"blockinactive-config-mail-subject": "هشدار! حساب کاربری ویکی شما به‌زودی مسدود خواهد شد",
 	"blockinactive-config-mail-body": "حساب ویکی شما به‌زودی به‌طور خودکار مسدود خواهد شد زیرا غیرفعال است. برای جلوگیری از این امر، لطفاً وارد {{SITENAME}} شوید، که حساب شما را فعال می‌کند و از مسدود شدن آن جلوگیری می‌کند.",
 	"blockinactive-config-mail-block-subject": "حساب کاربری ویکی شما مسدود شده‌است",
-	"action-blockinactive": "بستن حساب‌های کاربری غیرفعال"
+	"action-blockinactive": "قطع دسترسی حساب‌های کاربری غیرفعال"
 }
