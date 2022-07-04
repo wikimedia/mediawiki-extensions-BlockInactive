@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robfirstname"
+		]
+	},
+	"blockinactive-table-username": "Nama pengguna",
+	"blockinactive-table-emailsent": "Surel terkirim",
+	"blockinactive-table-actions": "Tindakan",
+	"blockinactive-action-block": "Blokir"
+}
