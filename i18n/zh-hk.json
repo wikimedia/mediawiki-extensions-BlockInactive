@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"SunAfterRain"
+		]
+	},
+	"blockinactive-table-userid": "用戶ID",
+	"blockinactive-config-mail-subject": "警告！您的 wiki 賬號將很快被封鎖",
+	"blockinactive-config-mail-block-subject": "您的wiki賬號已被封鎖"
+}
