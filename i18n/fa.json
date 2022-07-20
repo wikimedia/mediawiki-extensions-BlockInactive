@@ -8,11 +8,13 @@
 	},
 	"blockinactive-table-username": "نام کاربری",
 	"blockinactive-table-userid": "شناسه کاربری",
+	"blockinactive-table-inactivetime": "زمان غیرفعال",
 	"blockinactive-table-emailsent": "ایمیل ارسال شد",
 	"blockinactive-table-actions": "کنش‌ها",
 	"blockinactive-action-block": "بستن دسترسی",
 	"blockinactive-config-mail-subject": "هشدار! حساب کاربری ویکی شما به‌زودی مسدود خواهد شد",
 	"blockinactive-config-mail-body": "حساب ویکی شما به‌زودی به‌طور خودکار مسدود خواهد شد زیرا غیرفعال است. برای جلوگیری از این امر، لطفاً وارد {{SITENAME}} شوید، که حساب شما را فعال می‌کند و از مسدود شدن آن جلوگیری می‌کند.",
 	"blockinactive-config-mail-block-subject": "حساب کاربری ویکی شما مسدود شده‌است",
-	"action-blockinactive": "قطع دسترسی حساب‌های کاربری غیرفعال"
+	"action-blockinactive": "قطع دسترسی حساب‌های کاربری غیرفعال",
+	"right-blockinactive": "قطع دسترسی حساب‌های غیرفعال"
 }
