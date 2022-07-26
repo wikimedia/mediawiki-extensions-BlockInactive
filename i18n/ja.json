@@ -2,13 +2,23 @@
 	"@metadata": {
 		"authors": [
 			"MathXplore",
+			"Mugenpman",
 			"RYOUMA1117"
 		]
 	},
+	"blockinactive": "非アクティブなアカウントをブロックする",
 	"blockinactive-table-username": "利用者名",
 	"blockinactive-table-userid": "利用者ID",
+	"blockinactive-table-inactivetime": "非アクティブ時間",
 	"blockinactive-table-emailsent": "メールを送信しました",
 	"blockinactive-table-actions": "操作",
 	"blockinactive-action-block": "ブロック",
-	"blockinactive-config-mail-block-subject": "ご利用のアカウントはブロックされました"
+	"blockinactive-config-threshold": "アカウントを非アクティブとして扱う日数",
+	"blockinactive-config-daysblock": "ブロックを開始する日数",
+	"blockinactive-config-mail-subject": "警告！　あなたのアカウントはまもなくブロックされます",
+	"blockinactive-config-mail-body": "あなたのアカウントは非アクティブになっているため、まもなく自動的にブロックされます。これを回避するには、{{SITENAME}}にログインしてください。これにより、アカウントがアクティブになり、ブロックを回避できます。",
+	"blockinactive-config-mail-block-subject": "ご利用のアカウントはブロックされました",
+	"blockinactive-config-mail-block-body": "あなたのアカウントは非アクティブであるため、自動的にブロックされています。アカウントを復元するには、{{SITENAME}}のシステム管理者に連絡してください。",
+	"action-blockinactive": "非アクティブなアカウントをブロックする",
+	"right-blockinactive": "非アクティブなアカウントをブロックする"
 }
