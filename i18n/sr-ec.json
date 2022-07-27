@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"blockinactive-table-username": "Корисничко име",
+	"blockinactive-table-userid": "ИД корисника",
+	"blockinactive-table-emailsent": "Имејл је послат",
+	"blockinactive-table-actions": "Радње",
+	"blockinactive-action-block": "Блокирај"
+}
