@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Amoaniwaa"
 		]
 	},
@@ -18,6 +19,6 @@
 	"blockinactive-config-mail-body": "Ɛrenkyɛ yebesiw wo wiki account hokwan efisɛ wode dii dwuma akyɛ. Sɛ wompɛ sɛ yesiw wo account no ano a, yɛserɛwo sɛ bɔ wo din ne wo password wɔ {{SITENAME}}, eyi bɛma wo account no ano akɔ so ada hɔ.",
 	"blockinactive-config-mail-block-subject": "Wonni wo wiki account no hokwan anaa yesiw ano.",
 	"blockinactive-config-mail-block-body": "Yesiw wo wiki account no ano efisɛ wode dii dwuma akyɛ. Sɛ wopɛsɛ wode wo account do di dwuma a, yɛsrɛ wo hu {{SITENAME}} system administrator.",
-	"action-blockinactive": "Siw dwumadi a wɔyɛɛ ho adwuma akyɛ.",
+	"action-blockinactive": "siw dwumadi a wɔyɛɛ ho adwuma akyɛ",
 	"right-blockinactive": "Siw dwumadi a wɔyɛɛ ho adwuma akyɛ."
 }
