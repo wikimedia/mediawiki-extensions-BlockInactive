@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"blockinactive-table-username": "Korisničko ime",
+	"blockinactive-table-userid": "Korisnička oznaka",
+	"blockinactive-table-inactivetime": "Vrijeme neaktivnosti",
+	"blockinactive-table-emailsent": "Poslata e-poruka",
+	"blockinactive-table-actions": "Radnje",
+	"blockinactive-action-block": "Blokiraj",
+	"blockinactive-config-threshold": "Za koliko dana račun postaje neaktivan",
+	"blockinactive-config-daysblock": "Za koliko dana počinje blokada",
+	"blockinactive-config-warningdaysleft": "Koliko dana treba poslati upozorenje",
+	"blockinactive-config-mail-subject": "Upozorenje! Vaš wiki račun će uskoro biti blokiran",
+	"blockinactive-config-mail-body": "Vaš wiki račun će uskoro biti automatski blokiran jer je bio neaktivan. Kako biste to izbjegli, prijavite se na {{SITENAME}}, što će učiniti vaš račun aktivnim."
+}

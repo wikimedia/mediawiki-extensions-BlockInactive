@@ -5,8 +5,12 @@
 			"Vukky"
 		]
 	},
+	"blockinactive-desc": "Blokkerer alle brukere som ikke logger inn innen et visst antall dager siden forrige innlogging.",
+	"blockinactive": "Blokker inaktive kontoer",
 	"blockinactive-table-username": "Brukernavn",
 	"blockinactive-table-userid": "Bruker-ID",
+	"blockinactive-table-inactivetime": "Inaktiv tid",
+	"blockinactive-table-emailsent": "Epost sendt",
 	"blockinactive-table-actions": "Handlinger",
 	"blockinactive-action-block": "Blokker",
 	"action-blockinactive": "Blokkere inaktive kontoer",
