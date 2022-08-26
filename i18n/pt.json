@@ -20,8 +20,8 @@
 	"blockinactive-config-mail-body": "A sua conta será bloqueada automaticamente em breve porque tem estado inativa. Para evitá-lo, inicie uma sessão na wiki {{SITENAME}}, o que tornará a sua conta ativa e evitará o bloqueio.",
 	"blockinactive-config-mail-block-subject": "A sua conta na wiki foi bloqueada",
 	"blockinactive-config-mail-block-body": "A sua conta na wiki foi bloqueada automaticamente, por ter estado inativa. Para recuperar a sua conta contacte um administrador de sistema da wiki {{SITENAME}}.",
-	"action-blockinactive": "Bloquear contas inativas",
+	"action-blockinactive": "bloquear contas inativas",
 	"right-blockinactive": "Bloquear contas inativas",
 	"right-alwaysactive": "Contornar bloqueios por inatividade",
-	"action-alwaysactive": "Contornar bloqueios por inatividade"
+	"action-alwaysactive": "contornar bloqueios por inatividade"
 }
