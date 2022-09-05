@@ -4,6 +4,7 @@
 			"Vlad5250"
 		]
 	},
+	"blockinactive-desc": "Blokira sve korisnike što se ne prijave prije nego što istekne određeni broj dana.",
 	"blockinactive-table-username": "Korisničko ime",
 	"blockinactive-table-userid": "Korisnička oznaka",
 	"blockinactive-table-inactivetime": "Vrijeme neaktivnosti",
