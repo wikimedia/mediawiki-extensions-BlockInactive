@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Jon Harald Søby",
+			"Telaneo",
 			"Vukky"
 		]
 	},
@@ -13,6 +14,8 @@
 	"blockinactive-table-emailsent": "Epost sendt",
 	"blockinactive-table-actions": "Handlinger",
 	"blockinactive-action-block": "Blokker",
+	"blockinactive-config-mail-subject": "Advarsel! Brukerkontoen din kommer snart til å bli blokkert.",
+	"blockinactive-config-mail-block-subject": "Din brukerkonto har blitt blokkert",
 	"action-blockinactive": "Blokkere inaktive kontoer",
 	"right-blockinactive": "Blokkere inaktive kontoer",
 	"right-alwaysactive": "Omgå blokkering for inaktivitet",
