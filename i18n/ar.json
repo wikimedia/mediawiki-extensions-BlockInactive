@@ -3,12 +3,14 @@
 		"authors": [
 			"Asma",
 			"FiberAhmed",
+			"NEHAOUA",
 			"أَحمد",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"blockinactive-table-username": "اسم المستخدم",
 	"blockinactive-table-userid": "معرف المستخدم",
+	"blockinactive-table-inactivetime": "وقت غير نشط",
 	"blockinactive-table-emailsent": "أُرسل البريد الإلكتروني",
 	"blockinactive-table-actions": "الإجراءات",
 	"blockinactive-action-block": "حظر",
