@@ -2,17 +2,31 @@
 	"@metadata": {
 		"authors": [
 			"Asma",
+			"Dr-Taher",
 			"FiberAhmed",
 			"NEHAOUA",
 			"أَحمد",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
+	"blockinactive-desc": "يحظر جميع المستخدمين الذين لم يسجلوا الدخول قبل انقضاء عدد معين من الأيام منذ آخر تسجيل دخول لهم.",
+	"blockinactive-special-intro": "فيما يلي قائمة المستخدمين غير النشطين المعلقين الذين سيجري حظرهم. المستخدمون الذين لديهم تاريخ تسجيل دخول أخير >= ''' $1 ''' أيام يجري التعامل معهم على أنهم غير نشطين وسيجري حظرهم بعد''' $2 ''' أيام منذ آخر تسجيل دخول لهم. سيتلقون رسائل بريد إلكتروني تحذيرية قبل ''' $3 ''' يوم (أيام) من حظرهم ورسالة بريد إلكتروني واحدة بعد الحظر الفعلي.",
+	"blockinactive": "منع الحسابات غير النشطة",
 	"blockinactive-table-username": "اسم المستخدم",
 	"blockinactive-table-userid": "معرف المستخدم",
 	"blockinactive-table-inactivetime": "وقت غير نشط",
 	"blockinactive-table-emailsent": "أُرسل البريد الإلكتروني",
 	"blockinactive-table-actions": "الإجراءات",
 	"blockinactive-action-block": "حظر",
-	"action-blockinactive": "حظر الحسابات غير النشطة"
+	"blockinactive-config-threshold": "أيام معاملة الحساب على أنه غير نشط",
+	"blockinactive-config-daysblock": "أيام لبدء المنع",
+	"blockinactive-config-warningdaysleft": "أيام لإرسال تحذير احترازي بشأن المنع",
+	"blockinactive-config-mail-subject": "تحذير! سيتم حظر حساب wiki الخاص بك قريبًا",
+	"blockinactive-config-mail-body": "سيتم حظر حساب wiki الخاص بك تلقائيًا قريبًا لأنه كان غير نشط. لتجنب ذلك، يرجى تسجيل الدخول إلى {{SITENAME}}، مما يجعل حسابك نشطًا ويمنع حدوث المنع.",
+	"blockinactive-config-mail-block-subject": "تم منع حساب المستخدم الخاص بك",
+	"blockinactive-config-mail-block-body": "تم حظر حساب wiki الخاص بك تلقائيًا لأنه كان غير نشط. لإعادة حسابك، يرجى الاتصال بأحد إداريي {{SITENAME}}.",
+	"action-blockinactive": "حظر الحسابات غير النشطة",
+	"right-blockinactive": "منع الحسابات غير النشطة",
+	"right-alwaysactive": "تجاوز المنع لعدم النشاط",
+	"action-alwaysactive": "تجاوز المنع لعدم النشاط"
 }

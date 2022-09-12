@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Jon Harald Søby",
 			"Telaneo",
 			"Vukky"
@@ -19,5 +20,5 @@
 	"action-blockinactive": "Blokkere inaktive kontoer",
 	"right-blockinactive": "Blokkere inaktive kontoer",
 	"right-alwaysactive": "Omgå blokkering for inaktivitet",
-	"action-alwaysactive": "Omgå blokkering for inaktivitet"
+	"action-alwaysactive": "omgå blokkering for inaktivitet"
 }
