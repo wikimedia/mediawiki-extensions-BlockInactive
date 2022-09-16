@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"JohanahoJ",
 			"Sabelöga"
 		]
 	},
@@ -20,8 +21,8 @@
 	"blockinactive-config-mail-body": "Ditt konto kommer automatiskt blockeras snart då det varit inaktivt. Logga in på {{SITENAME}} för att undvika detta och göra ditt konto aktivt igen och förhindra blockeringen.",
 	"blockinactive-config-mail-block-subject": "Ditt wikikonto har blockerats",
 	"blockinactive-config-mail-block-body": "Ditt wikikonto har har automatiskt blockerats då det varit inaktivt. Kontakta en systemadministratör på {{SITENAME}} för att återaktivera ditt konto.",
-	"action-blockinactive": "Blockera inaktiva konton",
+	"action-blockinactive": "blockera inaktiva konton",
 	"right-blockinactive": "Blockera inaktiva konton",
 	"right-alwaysactive": "Kringgå blockering för inaktivitet",
-	"action-alwaysactive": "Kringgå blockering för inaktivitet"
+	"action-alwaysactive": "kringgå blockering för inaktivitet"
 }
