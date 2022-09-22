@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Jon Harald Søby",
-			"Vukky"
+			"Vukky",
+			"EdoAug",
+			"Telaneo"
 		]
 	},
 	"blockinactive-desc": "Blokkerer alle brukere som ikke logger inn innen et visst antall dager siden forrige innlogging.",
@@ -13,8 +15,10 @@
 	"blockinactive-table-emailsent": "Epost sendt",
 	"blockinactive-table-actions": "Handlinger",
 	"blockinactive-action-block": "Blokker",
+	"blockinactive-config-mail-subject": "Advarsel! Brukerkontoen din kommer snart til å bli blokkert.",
+	"blockinactive-config-mail-block-subject": "Din brukerkonto har blitt blokkert",
 	"action-blockinactive": "Blokkere inaktive kontoer",
 	"right-blockinactive": "Blokkere inaktive kontoer",
 	"right-alwaysactive": "Omgå blokkering for inaktivitet",
-	"action-alwaysactive": "Omgå blokkering for inaktivitet"
+	"action-alwaysactive": "omgå blokkering for inaktivitet"
 }
