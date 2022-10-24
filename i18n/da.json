@@ -5,6 +5,7 @@
 		]
 	},
 	"blockinactive-table-username": "Brugernavn",
+	"blockinactive-table-userid": "Bruger-ID",
 	"blockinactive-table-actions": "Handlinger",
 	"blockinactive-action-block": "Blokér"
 }
