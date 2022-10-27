@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pefect"
+		]
+	},
+	"blockinactive-table-username": "Nazwa użytkownika",
+	"blockinactive-table-userid": "Identyfikator użytkownika",
+	"blockinactive-table-emailsent": "Wiadomość została wysłana",
+	"blockinactive-action-block": "Zablokuj"
+}
