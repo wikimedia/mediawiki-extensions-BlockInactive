@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Սերգեյ Սաֆարյան"
 		]
 	},
+	"blockinactive-table-username": "Օգտանուն",
 	"blockinactive-table-actions": "Գործողություններ"
 }
