@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Seipinne"
+			"Seipinne",
+			"Yupik"
 		]
 	},
-	"blockinactive-table-username": "Kevtteenommâ"
+	"blockinactive-table-username": "Kevtteenommâ",
+	"blockinactive-action-block": "Eesti"
 }
