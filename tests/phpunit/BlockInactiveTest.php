@@ -249,8 +249,8 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 		// Add new user last touched 1 hour ago
 		$u = $this->getMutableTestUser()->getUser();
 		BlockInactive::getInstance()->blockUser( $u );
-		$this->assertTrue(
-			$u->isBlocked()
+		$this->assertNotNull(
+			$u->getBlock()
 		);
 		// Can't block twice
 		$this->assertFalse(
