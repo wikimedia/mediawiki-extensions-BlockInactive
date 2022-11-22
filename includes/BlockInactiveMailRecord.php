@@ -57,7 +57,7 @@ class BlockInactiveMailRecord {
 	 *
 	 * @return BlockInactiveMailRecord[]
 	 */
-	public static function getMoreRecent( int $userId, ?int $type = null, int $ts ) {
+	public static function getMoreRecent( int $userId, ?int $type, int $ts ) {
 		$dbr = wfGetDB( DB_REPLICA );
 		$query = self::getQuery(
 			$userId,
