@@ -4,10 +4,12 @@
 			"Robby",
 			"WikiWorks team",
 			"Amire80",
-			"Shirayuki"
+			"Shirayuki",
+			"Umherirrender",
+			"孟天皓"
 		]
 	},
-	"blockinactive-desc": "BlockInactive extension description",
+	"blockinactive-desc": "{{desc|name=BlockInactive|url=https://www.mediawiki.org/wiki/Extension:BlockInactive}}",
 	"blockinactive-special-intro": "Special page intro text",
 	"blockinactive": "Special page title",
 	"blockinactive-table-username": "username column\n{{identical|Username}}",
