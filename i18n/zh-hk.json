@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"SunAfterRain"
+			"SunAfterRain",
+			"捍粵者"
 		]
 	},
 	"blockinactive-table-userid": "用戶ID",
-	"blockinactive-config-mail-subject": "警告！您的 wiki 賬號將很快被封鎖",
-	"blockinactive-config-mail-block-subject": "您的wiki賬號已被封鎖",
-	"blockinactive-config-mail-block-body": "你的wiki賬號由於不活躍，已被自動封鎖。要恢復你的賬號，請聯絡{{SITENAME}}的系統管理員。"
+	"blockinactive-config-mail-subject": "警告！您的wiki賬號很快會封鎖",
+	"blockinactive-config-mail-block-subject": "您的wiki賬號已封鎖",
+	"blockinactive-config-mail-block-body": "你的wiki賬號不活躍，已自動封鎖。要恢復賬號，請聯絡{{SITENAME}}系統管理員。"
 }
