@@ -4,6 +4,24 @@
 			"Eleassar"
 		]
 	},
+	"blockinactive-desc": "Blokira vse uporabnike, ki se ne prijavijo, preden preteče določeno število dni od njihove zadnje prijave.",
+	"blockinactive-special-intro": "Tu je seznam neaktivnih uporabnikov, ki čakajo na blokiranje. Uporabniki z datumom zadnje prijave >=''''$1''' dni se obravnavajo kot neaktivni in bodo po '''$2''' dneh od zadnje prijave blokirani. '''$3''' dan (dni) pred blokiranjem bodo prejeli opozorilna e-poštna sporočila in eno e-poštno sporočilo po dejanski blokadi.",
+	"blockinactive": "Blokiranje neaktivnih računov",
 	"blockinactive-table-username": "Uporabniško ime",
-	"blockinactive-table-actions": "Dejanja"
+	"blockinactive-table-userid": "ID uporabnika",
+	"blockinactive-table-inactivetime": "Čas neaktivnosti",
+	"blockinactive-table-emailsent": "E-pismo poslano",
+	"blockinactive-table-actions": "Dejanja",
+	"blockinactive-action-block": "Blokiranje",
+	"blockinactive-config-threshold": "Dnevi za obravnavanje računa kot neaktivnega",
+	"blockinactive-config-daysblock": "Dnevi za začetek blokiranja",
+	"blockinactive-config-warningdaysleft": "Dnevi za pošiljanje previdnostnega opozorila o blokiranju",
+	"blockinactive-config-mail-subject": "Opozorilo! Vaš viki račun bo kmalu blokiran",
+	"blockinactive-config-mail-body": "Vaš viki račun bo kmalu samodejno blokiran, ker je bil neaktiven. Da bi se temu izognili, vas prosimo, da se prijavite v {{SITENAME}}, kar bo aktiviralo vaš račun in preprečilo blokiranje.",
+	"blockinactive-config-mail-block-subject": "Vaš viki račun je blokiran",
+	"blockinactive-config-mail-block-body": "Vaš viki račun je bil samodejno blokiran, ker je bil neaktiven. Če želite obnoviti svoj račun, se obrnite na administratorja projekta {{SITENAME}}.",
+	"action-blockinactive": "blokiranje neaktivnih računov",
+	"right-blockinactive": "blokiranje neaktivnih računov",
+	"right-alwaysactive": "Obhod blokade zaradi nedejavnosti",
+	"action-alwaysactive": "obhodno blokiranje zaradi nedejavnosti"
 }

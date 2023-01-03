@@ -1,11 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Pefect"
+			"Pefect",
+			"Superjurek"
 		]
 	},
+	"blockinactive-desc": "Blokuje wszystkich użytkowników, którzy nie zalogują się przed upływem określonej liczby dni od ostatniego logowania.",
+	"blockinactive": "Blokuj nieaktywne konta",
 	"blockinactive-table-username": "Nazwa użytkownika",
 	"blockinactive-table-userid": "Identyfikator użytkownika",
 	"blockinactive-table-emailsent": "Wiadomość została wysłana",
-	"blockinactive-action-block": "Zablokuj"
+	"blockinactive-action-block": "Zablokuj",
+	"blockinactive-config-daysblock": "Dni do rozpoczęcia blokowania",
+	"blockinactive-config-mail-subject": "Ostrzeżenie! Twoje konto użytkownika zostanie wkrótce zablokowane",
+	"blockinactive-config-mail-body": "Twoje konto wiki zostanie wkrótce automatycznie zablokowane, ponieważ pozostawało przez dłuższy czas nieaktywne. Aby tego uniknąć, zaloguj się na {{SITENAME}}, co uaktywni Twoje konto i zapobiegnie wystąpieniu blokady.",
+	"blockinactive-config-mail-block-subject": "Twoje konto użytkownika zostało zablokowane",
+	"blockinactive-config-mail-block-body": "Twoje konto wiki zostało automatycznie zablokowane, ponieważ pozostało przez dłuższy czas nieaktywne. Aby przywrócić funkcjonalności konta, skontaktuj się z administratorem systemu {{SITENAME}}."
 }
