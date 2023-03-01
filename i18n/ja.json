@@ -4,6 +4,7 @@
 			"MathXplore",
 			"Mugenpman",
 			"RYOUMA1117",
+			"Whym",
 			"背番号4のエース"
 		]
 	},
@@ -22,7 +23,7 @@
 	"blockinactive-config-mail-subject": "警告！　あなたのアカウントはまもなくブロックされます",
 	"blockinactive-config-mail-body": "あなたのアカウントは非アクティブになっているため、まもなく自動的にブロックされます。これを回避するには、{{SITENAME}}にログインしてください。これにより、アカウントがアクティブになり、ブロックを回避できます。",
 	"blockinactive-config-mail-block-subject": "ご利用のアカウントはブロックされました",
-	"blockinactive-config-mail-block-body": "あなたのアカウントは非アクティブであるため、自動的にブロックされています。アカウントを復元するには、{{SITENAME}}のシステム管理者に連絡してください。",
+	"blockinactive-config-mail-block-body": "あなたのアカウントは非アクティブだったので、自動的にブロックされました。アカウントを復元するには、{{SITENAME}}のシステム管理者に連絡してください。",
 	"action-blockinactive": "非アクティブなアカウントをブロックする",
 	"right-blockinactive": "非アクティブなアカウントをブロックする",
 	"right-alwaysactive": "非アクティブ時のブロックをバイパスする",
