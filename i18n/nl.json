@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
-			"Nickthijssen1994"
+			"Nickthijssen1994",
+			"McDutchie"
 		]
 	},
 	"blockinactive-desc": "Blokkeert alle gebruikers die niet inloggen binnen een bepaald aantal dagen sinds hun laatste inlogmoment.",
@@ -12,7 +13,7 @@
 	"blockinactive-table-userid": "Gebruiker id",
 	"blockinactive-table-inactivetime": "Tijd inactief",
 	"blockinactive-table-emailsent": "E-mail verzonden",
-	"blockinactive-table-actions": "Acties",
+	"blockinactive-table-actions": "Handelingen",
 	"blockinactive-action-block": "Blokkeren",
 	"blockinactive-config-threshold": "Dagen voordat account als inactief wordt gezien",
 	"blockinactive-config-daysblock": "Dagen waarna blokkeren te starten",
