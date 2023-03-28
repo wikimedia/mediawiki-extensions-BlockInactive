@@ -13,7 +13,7 @@
 	"blockinactive-table-username": "Brukernavn",
 	"blockinactive-table-userid": "Bruker-ID",
 	"blockinactive-table-inactivetime": "Inaktiv tid",
-	"blockinactive-table-emailsent": "Epost sendt",
+	"blockinactive-table-emailsent": "E-post sendt",
 	"blockinactive-table-actions": "Handlinger",
 	"blockinactive-action-block": "Blokker",
 	"blockinactive-config-threshold": "Dager før en bruker blir behandlet som inaktiv",
