@@ -5,10 +5,12 @@
 			"Hedda",
 			"Sayginer",
 			"Joseph",
-			"Khalvar"
+			"Khalvar",
+			"ToprakM"
 		]
 	},
 	"blockinactive-desc": "Son girişlerinden bu yana belirli sayıda gün geçmeden giriş yapmayan tüm kullanıcıları engeller.",
+	"blockinactive-special-intro": "Engellenmeyi bekleyen aktif olmayan kullanıcıların listesi aşağıdadır. Son oturum açma tarihi >='''$1''' gün olan kullanıcılar aktif değil olarak işaretlenecek ve son oturum açma tarihinden '''$2''' sonra engelleneceklerdir. Engellenmeden '''$3''' gün önce ve engellenmenin hemen ardından birer uyarı e-postası alacaklar.",
 	"blockinactive": "Etkin olmayan hesapları engelle",
 	"blockinactive-table-username": "Kullanıcı adı",
 	"blockinactive-table-userid": "Kullanıcı kimliği",
@@ -17,9 +19,13 @@
 	"blockinactive-table-actions": "Eylemler",
 	"blockinactive-action-block": "Engelle",
 	"blockinactive-config-threshold": "Hesabı inaktif olarak değerlendileceği günler",
+	"blockinactive-config-daysblock": "Engellenmenin başlayacağı gün",
+	"blockinactive-config-warningdaysleft": "Engelleme önleme uyarısının gönderileceği gün",
 	"blockinactive-config-mail-subject": "Uyarı! Viki hesabınız yakında engellenecektir",
+	"blockinactive-config-mail-body": "Viki hesabınız atkif olmadığı için otomatik olarak engellenecek. Bunun önüne geçmek için lütfen {{SITENAME}} adresinde oturum açın. Oturun açmak hesabınızı aktif hale getirecek ve engellenmenizi önleyecektir.",
 	"blockinactive-config-mail-block-subject": "Viki hesabınız engellendi",
 	"blockinactive-config-mail-block-body": "Viki hesabınız, etkin olmadığından beri otomatik olarak engellendi. Hesabınızı eski duruma getirmek için, lüten {{SITENAME}} sistem yöneticisi ile temasa geçiniz.",
 	"action-blockinactive": "Etkin olmayan hesapları engelle",
-	"right-blockinactive": "Etkin olmayan hesapları engelle"
+	"right-blockinactive": "Etkin olmayan hesapları engelle",
+	"right-alwaysactive": "İnaktiflik nedeniyle engellenmeyi atla"
 }
