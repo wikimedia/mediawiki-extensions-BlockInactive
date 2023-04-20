@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"blockinactive-desc": "Blokuoja visus naudotojus, kurie neprisijungia praėjus tam tikram dienų skaičiui nuo paskutinio prisijungimo."
+}
