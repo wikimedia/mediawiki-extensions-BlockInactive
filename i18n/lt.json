@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"blockinactive-desc": "Blokuoja visus naudotojus, kurie neprisijungia praėjus tam tikram dienų skaičiui nuo paskutinio prisijungimo.",
+	"blockinactive-special-intro": "Žemiau pateikiamas sąrašas ketinamų blokuoti neaktyvių naudotojų. Naudotojai, kurių paskutinė prisijungimo data >='''$1''' dienos yra laikomi neaktyviais ir bus užblokuoti po '''$2''' dienų po jų paskutinio prisijungimo. Jie gaus įspėjimo el. laiškus prieš '''$3''' dienas iki užblokavimo ir vieną el. laišką, kai bus užblokuoti.",
+	"blockinactive": "Blokuoti neaktyvias paskyras",
+	"blockinactive-table-username": "Naudotojo vardas",
+	"blockinactive-table-userid": "Naudotojo id",
+	"blockinactive-table-inactivetime": "Neaktyvumo laikas",
+	"blockinactive-table-emailsent": "El. laiškas išsiųstas",
+	"blockinactive-table-actions": "Veiksmai",
+	"blockinactive-action-block": "Blokuoti",
+	"blockinactive-config-threshold": "Dienų, po kurių paskyra turėtų būti laikoma neaktyvi, skaičius",
+	"blockinactive-config-daysblock": "Dienų, po kurių pradėti blokuoti, skaičius",
+	"blockinactive-config-warningdaysleft": "Dienų, po kurių siųsti blokavimo įspėjimus, skaičius",
+	"blockinactive-config-mail-subject": "Įspėjimas! Jūsų viki paskyra netrukus bus užblokuota",
+	"blockinactive-config-mail-body": "Jūsų viki paskyra netrukus bus automatiškai užblokuota, nes ji neaktyvi. Kad to išvengtumėte, prisijunkite prie {{SITENAME}}, tai suaktyvins jūsų paskyrą ir ji nebus užblokuota.",
+	"blockinactive-config-mail-block-subject": "Jūsų viki paskyra užblokuota",
+	"right-blockinactive": "Blokuoti neaktyvias paskyras",
+	"right-alwaysactive": "Apeiti neaktyvumo blokavimą"
+}
