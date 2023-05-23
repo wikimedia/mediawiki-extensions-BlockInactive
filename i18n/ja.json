@@ -5,11 +5,12 @@
 			"Mugenpman",
 			"RYOUMA1117",
 			"背番号4のエース",
-			"Whym"
+			"Whym",
+			"Shirayuki"
 		]
 	},
-	"blockinactive-desc": "最後のログインから一定の日数が経過する前にログインしないすべてのユーザーをブロックします。",
-	"blockinactive-special-intro": "以下は、ブロックされる保留中の非アクティブ ユーザーのリストです。最終ログイン日が >=''' $1 ''' 日であるユーザーは非アクティブとして扱われ、最終ログインから ''' $2 ''' 日後にブロックされます。ブロックされる ''' $3 ''' 日前に警告メールが届き、実際にブロックされてから 1 通のメールが届きます。",
+	"blockinactive-desc": "最終ログインから一定の日数が経過する前にログインしないすべての利用者をブロックする。",
+	"blockinactive-special-intro": "以下はブロックが保留されている非アクティブな利用者のリストです。最終ログイン日が '''$1''' 日以上前の利用者は非アクティブとみなされ、最終ログインから '''$2''' 日後にブロックされます。ブロックされる日の '''$3''' 日前に警告メールが届き、実際にブロックされてから 1 通のメールが届きます。",
 	"blockinactive": "非アクティブなアカウントをブロックする",
 	"blockinactive-table-username": "利用者名",
 	"blockinactive-table-userid": "利用者ID",
@@ -24,8 +25,8 @@
 	"blockinactive-config-mail-body": "あなたのアカウントは非アクティブになっているため、まもなく自動的にブロックされます。これを回避するには、{{SITENAME}}にログインしてください。これにより、アカウントがアクティブになり、ブロックを回避できます。",
 	"blockinactive-config-mail-block-subject": "ご利用のアカウントはブロックされました",
 	"blockinactive-config-mail-block-body": "あなたのアカウントは非アクティブだったので、自動的にブロックされました。アカウントを復元するには、{{SITENAME}}のシステム管理者に連絡してください。",
-	"action-blockinactive": "非アクティブなアカウントをブロックする",
-	"right-blockinactive": "非アクティブなアカウントをブロックする",
-	"right-alwaysactive": "非アクティブ時のブロックをバイパスする",
-	"action-alwaysactive": "非アクティブのブロックをバイパスする"
+	"action-blockinactive": "非アクティブなアカウントのブロック",
+	"right-blockinactive": "非アクティブなアカウントをブロック",
+	"right-alwaysactive": "非アクティブでブロックされるのを回避",
+	"action-alwaysactive": "非アクティブでのブロックの回避"
 }
