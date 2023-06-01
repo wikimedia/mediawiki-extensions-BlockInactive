@@ -4,5 +4,10 @@
 			"Narazeni"
 		]
 	},
-	"blockinactive-config-mail-block-subject": "თქვანი ვიკი ანგარიში ბლოკირი რე"
+	"blockinactive-table-username": "მახვარებუშ ჯოხო",
+	"blockinactive-action-block": "ბლოკუა",
+	"blockinactive-config-mail-subject": "ხვილაფა! თქვანი ვიკი ანგარიში მალას დიბლოკუ",
+	"blockinactive-config-mail-block-subject": "თქვანი ვიკი ანგარიში ბლოკირი რე",
+	"action-blockinactive": "ვააქტიური ანგარიშეფიშ ბლოკუა",
+	"right-blockinactive": "ვააქტიური ანგარიშეფიშ ბლოკუა"
 }
