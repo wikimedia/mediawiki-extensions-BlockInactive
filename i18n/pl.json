@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chrumps",
 			"Pefect",
 			"Superjurek"
 		]
@@ -10,6 +11,7 @@
 	"blockinactive-table-username": "Nazwa użytkownika",
 	"blockinactive-table-userid": "Identyfikator użytkownika",
 	"blockinactive-table-emailsent": "Wiadomość została wysłana",
+	"blockinactive-table-actions": "Działania",
 	"blockinactive-action-block": "Zablokuj",
 	"blockinactive-config-daysblock": "Dni do rozpoczęcia blokowania",
 	"blockinactive-config-mail-subject": "Ostrzeżenie! Twoje konto użytkownika zostanie wkrótce zablokowane",
