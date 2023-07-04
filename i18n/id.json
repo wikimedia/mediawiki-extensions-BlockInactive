@@ -1,11 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robfirstname"
+			"Robfirstname",
+			"Veracious"
 		]
 	},
+	"blockinactive": "Blokir akun yang tidak aktif",
 	"blockinactive-table-username": "Nama pengguna",
 	"blockinactive-table-emailsent": "Surel terkirim",
 	"blockinactive-table-actions": "Tindakan",
-	"blockinactive-action-block": "Blokir"
+	"blockinactive-action-block": "Blokir",
+	"action-blockinactive": "blokir akun yang tidak aktif",
+	"right-blockinactive": "Blokir akun yang tidak aktif"
 }
