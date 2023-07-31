@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vlad5250"
+			"Winston Sung"
 		]
 	},
 	"blockinactive-desc": "Blokira sve korisnike što se ne prijave prije nego što istekne određeni broj dana.",
