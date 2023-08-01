@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"blockinactive-desc": "Blokira sve korisnike što se ne prijave prije nego što istekne određeni broj dana.",
+	"blockinactive-special-intro": "Dolje je prikazan spisak neaktivnih korisnika koji čekaju na blokiranje. Korisnici koji posljednji put se prijavili >=''''$1'''' dana tretiraju se kao neaktivni i bit će blokirani poslije '''$2''' dana od posljednje prijave. Primit će e-poštu upozorenja '''$3''' dan(a) prije blokiranja i jednu e-poštu nakon stvarnog blokiranja.",
+	"blockinactive-table-username": "Korisničko ime",
+	"blockinactive-table-userid": "Korisnička oznaka",
+	"blockinactive-table-inactivetime": "Vrijeme neaktivnosti",
+	"blockinactive-table-emailsent": "Poslata e-poruka",
+	"blockinactive-table-actions": "Radnje",
+	"blockinactive-action-block": "Blokiraj",
+	"blockinactive-config-threshold": "Za koliko dana račun postaje neaktivan",
+	"blockinactive-config-daysblock": "Za koliko dana počinje blokada",
+	"blockinactive-config-warningdaysleft": "Koliko dana treba poslati upozorenje",
+	"blockinactive-config-mail-subject": "Upozorenje! Vaš wiki račun će uskoro biti blokiran",
+	"blockinactive-config-mail-body": "Vaš wiki račun će uskoro biti automatski blokiran jer je bio neaktivan. Kako biste to izbjegli, prijavite se na {{SITENAME}}, što će učiniti vaš račun aktivnim."
+}
