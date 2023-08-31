@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Phjtieudoc"
+		]
+	},
+	"blockinactive-desc": "Cấm tất cả các thành viên không đăng nhập trước một số ngày cụ thể kể từ lần đăng nhập cuối của họ.",
+	"blockinactive": "Cấm tài khoản không hoạt động"
+}
