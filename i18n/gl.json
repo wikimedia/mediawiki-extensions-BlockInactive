@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xosecalvo"
+		]
+	},
+	"blockinactive-table-username": "Nome de usuario",
+	"blockinactive-table-userid": "Identificador de usuario",
+	"blockinactive-table-inactivetime": "Tempo inactivo",
+	"blockinactive-table-emailsent": "Correo electrónico enviado",
+	"blockinactive-table-actions": "Accións",
+	"blockinactive-action-block": "Bloquear",
+	"blockinactive-config-threshold": "Días para considerar a conta como inactiva",
+	"blockinactive-config-daysblock": "Días para comezar o bloqueo",
+	"blockinactive-config-warningdaysleft": "Días para enviar aviso de precaución de bloqueo",
+	"blockinactive-config-mail-subject": "Advertencia! A súa conta na wiki bloquearase en breve",
+	"blockinactive-config-mail-body": "A túa conta wiki será bloqueada automaticamente en breve xa que estivo inactiva. Para evitar isto, inicie sesión en {{SITENAME}}, o que activará a súa conta e evitará que se produza o bloqueo.",
+	"blockinactive-config-mail-block-subject": "A súa conta de usuario na wiki foi bloqueada",
+	"blockinactive-config-mail-block-body": "A súa conta wiki foi bloqueada automaticamente xa que estivo inactiva. Para restablecer a súa conta, póñase en contacto cun administrador do sistema de {{SITENAME}}.",
+	"action-blockinactive": "bloquear contas inactivas",
+	"right-blockinactive": "Bloquear contas inactivas"
+}
