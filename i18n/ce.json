@@ -4,5 +4,9 @@
 			"Умар"
 		]
 	},
-	"blockinactive-table-actions": "Ардамаш"
+	"blockinactive-table-username": "Декъашхочун цӀе",
+	"blockinactive-table-userid": "Декъашхочун ID",
+	"blockinactive-table-emailsent": "Кехат дӀадахьийтина",
+	"blockinactive-table-actions": "Ардамаш",
+	"blockinactive-action-block": "Блоктоха"
 }
