@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Toliño",
 			"Xosecalvo"
 		]
 	},
+	"blockinactive-desc": "Bloquea todos os usuarios que non inician sesión antes de que transcorra un determinado número de días desde o seu último inicio de sesión.",
+	"blockinactive-special-intro": "Abaixo está a lista de usuarios inactivos pendentes de ser bloqueados. Os usuarios cunha última data de inicio de sesión >='''$1''' días son tratados como inactivos e bloquearanse despois de '''$2''' días desde o seu último inicio de sesión. Recibirán correos electrónicos de aviso '''$3''' días antes de seren bloqueados e un único correo electrónico despois do bloqueo real.",
+	"blockinactive": "Bloquear contas inactivas",
 	"blockinactive-table-username": "Nome de usuario",
 	"blockinactive-table-userid": "Identificador de usuario",
 	"blockinactive-table-inactivetime": "Tempo inactivo",
@@ -13,10 +17,12 @@
 	"blockinactive-config-threshold": "Días para considerar a conta como inactiva",
 	"blockinactive-config-daysblock": "Días para comezar o bloqueo",
 	"blockinactive-config-warningdaysleft": "Días para enviar aviso de precaución de bloqueo",
-	"blockinactive-config-mail-subject": "Advertencia! A súa conta na wiki bloquearase en breve",
-	"blockinactive-config-mail-body": "A túa conta wiki será bloqueada automaticamente en breve xa que estivo inactiva. Para evitar isto, inicie sesión en {{SITENAME}}, o que activará a súa conta e evitará que se produza o bloqueo.",
-	"blockinactive-config-mail-block-subject": "A súa conta de usuario na wiki foi bloqueada",
-	"blockinactive-config-mail-block-body": "A súa conta wiki foi bloqueada automaticamente xa que estivo inactiva. Para restablecer a súa conta, póñase en contacto cun administrador do sistema de {{SITENAME}}.",
+	"blockinactive-config-mail-subject": "Advertencia! A túa conta no wiki bloquearase en breve",
+	"blockinactive-config-mail-body": "A túa conta wiki será bloqueada automaticamente en breve xa que estivo inactiva. Para evitar isto, inicia sesión en {{SITENAME}}, o que activará a túa conta e evitará que se produza o bloqueo.",
+	"blockinactive-config-mail-block-subject": "A túa conta de usuario no wiki foi bloqueada",
+	"blockinactive-config-mail-block-body": "A túa conta wiki foi bloqueada automaticamente xa que estivo inactiva. Para restablecer a túa conta, ponte en contacto cun administrador do sistema de {{SITENAME}}.",
 	"action-blockinactive": "bloquear contas inactivas",
-	"right-blockinactive": "Bloquear contas inactivas"
+	"right-blockinactive": "Bloquear contas inactivas",
+	"right-alwaysactive": "Evitar o bloqueo por inactividade",
+	"action-alwaysactive": "evitar o bloqueo por inactividade"
 }
