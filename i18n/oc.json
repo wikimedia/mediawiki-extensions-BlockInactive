@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nicolas Eynaud"
+		]
+	},
+	"blockinactive": "Blocar lei còmptes inactius",
+	"blockinactive-table-username": "Nom d'utilizaire",
+	"blockinactive-table-userid": "Identificant",
+	"blockinactive-table-emailsent": "Corriel mandat",
+	"blockinactive-table-actions": "Accions",
+	"blockinactive-action-block": "Blocar",
+	"blockinactive-config-threshold": "Nombre de jorns de passar avans de considerar lo còmpte coma inactiu",
+	"blockinactive-config-daysblock": "Jorns de passar avans de començar lo blocatge",
+	"blockinactive-config-warningdaysleft": "Jorns de passar avans de mandar un avertiment preliminar au blocatge"
+}
