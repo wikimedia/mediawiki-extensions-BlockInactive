@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Kizule",
+			"Milicevic01",
 			"Vlad5250"
 		]
 	},
@@ -14,5 +15,5 @@
 	"blockinactive-action-block": "Блокирај",
 	"blockinactive-config-mail-block-subject": "Ваш вики налог је блокиран",
 	"action-blockinactive": "блокирате неактивне налоге",
-	"right-blockinactive": "Блокирање неактивних налога"
+	"right-blockinactive": "блокирање неактивних налога"
 }
