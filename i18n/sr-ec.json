@@ -1,12 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vlad5250"
+			"Vlad5250",
+			"Kizule",
+			"Milicevic01"
 		]
 	},
+	"blockinactive": "Блокирање неактивних налога",
 	"blockinactive-table-username": "Корисничко име",
 	"blockinactive-table-userid": "ИД корисника",
+	"blockinactive-table-inactivetime": "Време неактивности",
 	"blockinactive-table-emailsent": "Имејл је послат",
 	"blockinactive-table-actions": "Радње",
-	"blockinactive-action-block": "Блокирај"
+	"blockinactive-action-block": "Блокирај",
+	"blockinactive-config-mail-block-subject": "Ваш вики налог је блокиран",
+	"action-blockinactive": "блокирате неактивне налоге",
+	"right-blockinactive": "блокирање неактивних налога"
 }
