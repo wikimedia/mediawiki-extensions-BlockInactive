@@ -6,7 +6,7 @@
 			"Nickthijssen1994"
 		]
 	},
-	"blockinactive-desc": "Blokkeert alle gebruikers die niet inloggen binnen een bepaald aantal dagen sinds hun laatste inlogmoment.",
+	"blockinactive-desc": "Blokkeert alle gebruikers die zich niet aanmelden binnen een bepaald aantal dagen na hun laatste aanmelding.",
 	"blockinactive-special-intro": "In onderstaande lijst staan de gebruikers die in afwachting zijn om geblokkeerd te worden vanwege inactiviteit. Gebruikers met een laatste logindatum >='''$1''' dagen worden gezien als inactief en worden geblokkeerd na '''$2''' dagen vanaf hun laatste inlog moment. Zij ontvangen '''$3''' dag(en) van tevoren waarschuwingsmails en een bevestigingsmail na de daadwerkelijke blokkade.",
 	"blockinactive": "Inactieve accounts blokkeren",
 	"blockinactive-table-username": "Gebruikersnaam",
