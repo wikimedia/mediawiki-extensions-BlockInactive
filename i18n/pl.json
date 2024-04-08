@@ -3,13 +3,15 @@
 		"authors": [
 			"Chrumps",
 			"Pefect",
-			"Superjurek"
+			"Superjurek",
+			"WaldiSt"
 		]
 	},
 	"blockinactive-desc": "Blokuje wszystkich użytkowników, którzy nie zalogują się przed upływem określonej liczby dni od ostatniego logowania.",
 	"blockinactive": "Blokuj nieaktywne konta",
 	"blockinactive-table-username": "Nazwa użytkownika",
 	"blockinactive-table-userid": "Identyfikator użytkownika",
+	"blockinactive-table-inactivetime": "Czas nieaktywny",
 	"blockinactive-table-emailsent": "Wiadomość została wysłana",
 	"blockinactive-table-actions": "Działania",
 	"blockinactive-action-block": "Zablokuj",
