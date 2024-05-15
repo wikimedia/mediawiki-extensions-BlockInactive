@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\BlockInactive;
 
+use MediaWiki\MediaWikiServices;
 use stdClass;
 
 class BlockInactiveMailRecord {
@@ -58,7 +59,7 @@ class BlockInactiveMailRecord {
 	 * @return BlockInactiveMailRecord[]
 	 */
 	public static function getMoreRecent( int $userId, ?int $type, int $ts ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		$query = self::getQuery(
 			$userId,
 			0,
@@ -91,7 +92,7 @@ class BlockInactiveMailRecord {
 	 * @return BlockInactiveMailRecord[]
 	 */
 	public static function findForUserId( int $userId, int $limit = 0, int $type = null, int $ts = null ): array {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		$query = self::getQuery(
 			$userId,
 			$limit,
@@ -128,7 +129,7 @@ class BlockInactiveMailRecord {
 		int $mailType,
 		int $ts = null
 	) {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = MediaWikiServices::getInstance()->getConnectionProvider()->getPrimaryDatabase();
 		$row = $dbw->selectField(
 			'blockinactive_emails',
 			'MAX(ba_sent_attempt) as ba_sent_attempt',
@@ -221,7 +222,7 @@ class BlockInactiveMailRecord {
 	 * @return array
 	 */
 	private static function getQuery( int $userId, int $limit = 0, int $type = null, int $ts = null ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		$conds = [
 			'ba_user_id' => $userId
 		];

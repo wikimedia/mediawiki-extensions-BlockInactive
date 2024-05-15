@@ -47,12 +47,12 @@ class BlockInactive {
 			'tables' => [
 				'u' => 'user',
 				'e' => 'blockinactive_emails',
-				'b' => 'ipblocks'
+				'b' => 'block_target'
 			],
-			'fields' => [ 'user_id', 'MAX(ba_sent_ts) as ba_sent_ts', 'ipb_user' ],
+			'fields' => [ 'user_id', 'MAX(ba_sent_ts) as ba_sent_ts', 'bt_user' ],
 			'conds' => [
 				'u.user_touched <= ' . wfTimestamp( TS_MW, time() - $threshold ),
-				'b.ipb_user IS NULL'
+				'b.bt_user IS NULL'
 			],
 			'join_conds' => [
 				'e' => [
@@ -64,11 +64,11 @@ class BlockInactive {
 				'b' => [
 					'LEFT JOIN',
 					[
-						"user_id = b.ipb_user"
+						"user_id = b.bt_user"
 					]
 				]
 			],
-			'options' => [ 'GROUP BY' => [ 'u.user_id', 'ipb_user' ] ]
+			'options' => [ 'GROUP BY' => [ 'u.user_id', 'bt_user' ] ]
 		];
 	}
 
@@ -81,7 +81,7 @@ class BlockInactive {
 		if ( $threshold === null ) {
 			$threshold = $this->getThreshold();
 		}
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		$query = $this->getQuery( $threshold );
 		$res = $dbr->select(
 			$query['tables'],
@@ -92,14 +92,11 @@ class BlockInactive {
 			$query['join_conds']
 		);
 		$results = [];
+		$permissionManager = MediaWikiServices::getInstance()->getPermissionManager();
 		foreach ( $res as $row ) {
 			$user = User::newFromId( $row->user_id );
 			// Exclude users with 'alwaysactive' right
-			if (
-				MediaWikiServices::getInstance()
-					->getPermissionManager()
-					->userHasRight( $user, 'alwaysactive' )
-			) {
+			if ( $permissionManager->userHasRight( $user, 'alwaysactive' ) ) {
 				continue;
 			}
 			$results[] = $user;
@@ -235,7 +232,7 @@ class BlockInactive {
 			$logEntry->setPerformer( $performer );
 			$logEntry->setParameters( $logParams );
 			$blockIds = array_merge( [ $success['id'] ], $success['autoIds'] );
-			$logEntry->setRelations( [ 'ipb_id' => $blockIds ] );
+			$logEntry->setRelations( [ 'bl_id' => $blockIds ] );
 			$logEntry->publish( $logEntry->insert() );
 
 			return true;

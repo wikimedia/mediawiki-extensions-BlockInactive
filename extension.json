@@ -6,7 +6,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "extension",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.43.0"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\BlockInactive\\": "includes/"
