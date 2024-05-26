@@ -98,17 +98,44 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 		);
 		// Expect the number of inactive users to grow by 1
 		$this->assertCount(
-			1, // test sysop + inactive user
-			$inactiveUsers
+			1,
+			$inactiveUsers,
+			"test sysop + 1 inactive user"
 		);
 		// Fetch user considering 5 minutes as an inactive threshold
 		$inactiveUsers = BlockInactive::getInstance()->getInactiveUsers(
 			300
 		);
+
 		// Expect the number of inactive users to grow by 2
 		$this->assertCount(
-			2, // test sysop + inactive user
-			$inactiveUsers
+			2,
+			$inactiveUsers,
+			"test sysop + 2 inactive user"
+		);
+		// Add new user last touched 1 hour ago
+		$u = $this->getMutableTestUser()->getUser();
+		$u->checkAndSetTouched();
+		$u->saveSettings();
+		$this->db->update( 'user', [
+				'user_touched' => wfTimestamp( TS_MW, time() - 3600 )
+			], [
+				'user_id' => $u->getId()
+			] );
+		// Do an edit with this user
+		$this->insertPage(
+			"BlockInactiveUnitTest1",
+			"Unit testing page with test content.",
+			NS_MAIN,
+			$u
+		);
+		$inactiveUsers = BlockInactive::getInstance()->getInactiveUsers(
+			1800
+		);
+		$this->assertCount(
+			1,
+			$inactiveUsers,
+			"after edit, user considered active"
 		);
 	}
 
