@@ -43,16 +43,32 @@ class BlockInactive {
 	 * @return array
 	 */
 	public function getQuery( int $threshold ): array {
+		$cutoff_timestamp = wfTimestamp( TS_MW, time() - $threshold );
+		$dbr = wfGetDB( DB_REPLICA );
+
+		$revision_max_ts_subquery = $dbr->buildSelectSubquery(
+			[ 'r' => "revision" ],
+			[ 'rev_actor', 'rev_max_ts' => 'MAX(rev_timestamp)' ],
+			'',
+			__METHOD__,
+			[ 'GROUP BY' => 'rev_actor' ],
+			[],
+		);
+
 		return [
 			'tables' => [
 				'u' => 'user',
 				'e' => 'blockinactive_emails',
-				'b' => 'ipblocks'
+				'b' => 'ipblocks',
+				'a' => 'actor',
+				'r' => $revision_max_ts_subquery,
 			],
 			'fields' => [ 'user_id', 'MAX(ba_sent_ts) as ba_sent_ts', 'ipb_user' ],
 			'conds' => [
-				'u.user_touched <= ' . wfTimestamp( TS_MW, time() - $threshold ),
-				'b.ipb_user IS NULL'
+				'u.user_touched <= ' . $cutoff_timestamp,  // not touched recently
+				'b.ipb_user IS NULL',  // not already blocked
+				'( rev_max_ts IS NULL OR rev_max_ts <= ' . $cutoff_timestamp . ')',
+					// has not edited OR has not edited recently
 			],
 			'join_conds' => [
 				'e' => [
@@ -65,6 +81,18 @@ class BlockInactive {
 					'LEFT JOIN',
 					[
 						"user_id = b.ipb_user"
+					]
+				],
+				'a' => [
+					'LEFT JOIN',
+					[
+						"user_id = a.actor_user"
+					]
+				],
+				'r' => [
+					'LEFT JOIN',
+					[
+						'r.rev_actor = a.actor_id'
 					]
 				]
 			],
