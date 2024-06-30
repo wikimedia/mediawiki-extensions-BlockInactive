@@ -53,7 +53,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	 */
 	public function testGetInactiveUsers() {
 		// Clean up the test user database (that's safe)
-		$this->db->delete( 'user', 'user_id IS NOT NULL' );
+		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		// Expected zero
 		$inactiveUsersInitial = BlockInactive::getInstance()->getInactiveUsers(
 			1
@@ -67,7 +67,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 		$u->checkAndSetTouched();
 		$u->saveSettings();
 		// Shift the user touched flag by 1 hour
-		$this->db->update( 'user', [
+		$this->getDb()->update( 'user', [
 				'user_touched' => wfTimestamp( TS_MW, time() - 3600 )
 			], [
 				'user_id' => $u->getId()
@@ -77,7 +77,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 		$u->checkAndSetTouched();
 		$u->saveSettings();
 		// Shift the user touched flag by 10 minutes
-		$this->db->update( 'user', [
+		$this->getDb()->update( 'user', [
 				'user_touched' => wfTimestamp( TS_MW, time() - 600 )
 			], [
 				'user_id' => $u->getId()
@@ -87,7 +87,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 		$u->checkAndSetTouched();
 		$u->saveSettings();
 		// Shift the user touched flag by 2 hours
-		$this->db->update( 'user', [
+		$this->getDb()->update( 'user', [
 				'user_touched' => wfTimestamp( TS_MW, time() - 7200 )
 			], [
 				'user_id' => $u->getId()
@@ -117,7 +117,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 		$u = $this->getMutableTestUser()->getUser();
 		$u->checkAndSetTouched();
 		$u->saveSettings();
-		$this->db->update( 'user', [
+		$this->getDb()->update( 'user', [
 				'user_touched' => wfTimestamp( TS_MW, time() - 3600 )
 			], [
 				'user_id' => $u->getId()
@@ -184,7 +184,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 				'wgBlockInactiveDaysBlock' => 14 // days
 			] );
 		// Clean up the test user database (that's safe)
-		$this->db->delete( 'user', 'user_id IS NOT NULL' );
+		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 10 );
 		$blockTime = BlockInactive::getInstance()->timeLeft( $u );
 		$this->assertTrue(
@@ -207,7 +207,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	private function getUserWithTouched( $touched ): User {
 		$u = $this->getMutableTestUser()->getUser();
 		$u->saveSettings();
-		$this->db->update( 'user', [
+		$this->getDb()->update( 'user', [
 				'user_touched' => wfTimestamp( TS_MW, time() - $touched )
 			], [
 				'user_id' => $u->getId()
@@ -226,7 +226,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 				'wgBlockInactiveDaysBlock' => 14 // days
 			] );
 		// Clean up the test user database (that's safe)
-		$this->db->delete( 'user', 'user_id IS NOT NULL' );
+		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 10 );
 		$daysLeft = BlockInactive::getInstance()->daysLeft( $u );
 		// Test that the blocktime matches 7 days roughly
@@ -252,7 +252,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 				'wgBlockInactiveDaysBlock' => 14 // days
 			] );
 		// Clean up the test user database (that's safe)
-		$this->db->delete( 'user', 'user_id IS NOT NULL' );
+		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 10 );
 		$blockTime = BlockInactive::getInstance()->getUserBlockTime( $u );
 		// Test that the blocktime matches 7 days roughly
@@ -272,7 +272,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 			)
 		);
 		// Clean up the test user database (that's safe)
-		$this->db->delete( 'user', 'user_id IS NOT NULL' );
+		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		// Add new user last touched 1 hour ago
 		$u = $this->getMutableTestUser()->getUser();
 		BlockInactive::getInstance()->blockUser( $u );
@@ -292,7 +292,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 				'wgBlockInactiveWarningDaysLeft' => [ 1, 3, 5 ] // schedule
 			] );
 		// Clean up the test user database (that's safe)
-		$this->db->delete( 'user', 'user_id IS NOT NULL' );
+		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 9 );
 		$this->assertTrue(
 			BlockInactive::getInstance()->matchesSchedule( $u )
@@ -321,7 +321,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 				'wgBlockInactiveWarningDaysLeft' => [ 1, 3, 5 ] // schedule
 			] );
 		// Clean up the test user database (that's safe)
-		$this->db->delete( 'user', 'user_id IS NOT NULL' );
+		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 35 );
 		$this->assertTrue(
 			BlockInactive::getInstance()->hasPendingWarnings( $u )
@@ -346,7 +346,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 				'wgBlockInactiveWarningDaysLeft' => [ 1, 3, 5 ] // schedule
 			] );
 		// Clean up the test user database (that's safe)
-		$this->db->delete( 'user', 'user_id IS NOT NULL' );
+		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 30 );
 		$this->assertArrayEquals(
 			[
