@@ -143,9 +143,9 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::getThreshold
 	 */
 	public function testGetThreshold() {
-		$this->setMwGlobals( [
-				'wgBlockInactiveThreshold' => 123
-			] );
+		$this->overrideConfigValues( [
+			'BlockInactiveThreshold' => 123,
+		] );
 		$this->assertEquals(
 			123 * 60 * 60 * 24,
 			BlockInactive::getInstance()->getThreshold()
@@ -156,9 +156,9 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::getWarningSchedule
 	 */
 	public function testGetWarningSchedule() {
-		$this->setMwGlobals( [
-				'wgBlockInactiveWarningDaysLeft' => [ 1, 2, 3, 4, 5 ]
-			] );
+		$this->overrideConfigValues( [
+			'BlockInactiveWarningDaysLeft' => [ 1, 2, 3, 4, 5 ],
+		] );
 		$this->assertEquals(
 			[ 1, 2, 3, 4, 5 ],
 			BlockInactive::getInstance()->getWarningSchedule()
@@ -166,9 +166,9 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	public function testGetBlockTime() {
-		$this->setMwGlobals( [
-				'wgBlockInactiveDaysBlock' => 123
-			] );
+		$this->overrideConfigValues( [
+			'BlockInactiveDaysBlock' => 123,
+		] );
 		$this->assertEquals(
 			123 * 60 * 60 * 24,
 			BlockInactive::getInstance()->getBlockTime()
@@ -179,10 +179,10 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::timeLeft
 	 */
 	public function testTimeLeft() {
-		$this->setMwGlobals( [
-				'wgBlockInactiveThreshold' => 7, // days
-				'wgBlockInactiveDaysBlock' => 14 // days
-			] );
+		$this->overrideConfigValues( [
+			'BlockInactiveThreshold' => 7, // days
+			'BlockInactiveDaysBlock' => 14, // days
+		] );
 		// Clean up the test user database (that's safe)
 		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 10 );
@@ -221,10 +221,10 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::daysLeft
 	 */
 	public function testDaysLeft() {
-		$this->setMwGlobals( [
-				'wgBlockInactiveThreshold' => 7, // days
-				'wgBlockInactiveDaysBlock' => 14 // days
-			] );
+		$this->overrideConfigValues( [
+			'BlockInactiveThreshold' => 7, // days
+			'BlockInactiveDaysBlock' => 14, // days
+		] );
 		// Clean up the test user database (that's safe)
 		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 10 );
@@ -247,10 +247,10 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::getUserBlockTime
 	 */
 	public function testGetUserBlockTime() {
-		$this->setMwGlobals( [
-				'wgBlockInactiveThreshold' => 7, // days
-				'wgBlockInactiveDaysBlock' => 14 // days
-			] );
+		$this->overrideConfigValues( [
+			'BlockInactiveThreshold' => 7, // days
+			'BlockInactiveDaysBlock' => 14, // days
+		] );
 		// Clean up the test user database (that's safe)
 		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 10 );
@@ -286,11 +286,11 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	}
 
 	public function testMatchesSchedule() {
-		$this->setMwGlobals( [
-				'wgBlockInactiveThreshold' => 7, // days
-				'wgBlockInactiveDaysBlock' => 14, // days
-				'wgBlockInactiveWarningDaysLeft' => [ 1, 3, 5 ] // schedule
-			] );
+		$this->overrideConfigValues( [
+			'BlockInactiveThreshold' => 7, // days
+			'BlockInactiveDaysBlock' => 14, // days
+			'BlockInactiveWarningDaysLeft' => [ 1, 3, 5 ], // schedule
+		] );
 		// Clean up the test user database (that's safe)
 		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 9 );
@@ -315,11 +315,11 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::hasPendingWarnings
 	 */
 	public function testHasPendingWarnings() {
-		$this->setMwGlobals( [
-				'wgBlockInactiveThreshold' => 7, // days
-				'wgBlockInactiveDaysBlock' => 14, // days
-				'wgBlockInactiveWarningDaysLeft' => [ 1, 3, 5 ] // schedule
-			] );
+		$this->overrideConfigValues( [
+			'BlockInactiveThreshold' => 7, // days
+			'BlockInactiveDaysBlock' => 14, // days
+			'BlockInactiveWarningDaysLeft' => [ 1, 3, 5 ], // schedule
+		] );
 		// Clean up the test user database (that's safe)
 		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 35 );
@@ -340,11 +340,11 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::getWarningsMissed
 	 */
 	public function testGetWarningsMissed() {
-		$this->setMwGlobals( [
-				'wgBlockInactiveThreshold' => 7, // days
-				'wgBlockInactiveDaysBlock' => 14, // days
-				'wgBlockInactiveWarningDaysLeft' => [ 1, 3, 5 ] // schedule
-			] );
+		$this->overrideConfigValues( [
+			'BlockInactiveThreshold' => 7, // days
+			'BlockInactiveDaysBlock' => 14, // days
+			'BlockInactiveWarningDaysLeft' => [ 1, 3, 5 ], // schedule
+		] );
 		// Clean up the test user database (that's safe)
 		$this->getDb()->delete( 'user', 'user_id IS NOT NULL' );
 		$u = $this->getUserWithTouched( 3600 * 24 * 30 );
