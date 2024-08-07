@@ -14,9 +14,14 @@
 	"AutoloadClasses": {
 		"MediaWiki\\Extension\\BlockInactive\\BlockInactiveMaintenance": "maintenance/blockinactive.php"
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\BlockInactive\\BlockInactiveHooks"
+		}
+	},
 	"Hooks": {
-		"UserLoginComplete": "MediaWiki\\Extension\\BlockInactive\\BlockInactiveHooks::onUserLoginComplete",
-		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\BlockInactive\\BlockInactiveHooks::onLoadExtensionSchemaUpdates"
+		"UserLoginComplete": "main",
+		"LoadExtensionSchemaUpdates": "main"
 	},
 	"MessagesDirs": {
 		"BlockInactive": [
