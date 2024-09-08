@@ -24,7 +24,12 @@
 		]
 	},
 	"SpecialPages": {
-		"BlockInactive": "MediaWiki\\Extension\\BlockInactive\\SpecialBlockInactive"
+		"BlockInactive": {
+			"class": "MediaWiki\\Extension\\BlockInactive\\SpecialBlockInactive",
+			"services": [
+				"UserFactory"
+			]
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"BlockInactiveAlias": "includes/BlockInactive.alias.php"
