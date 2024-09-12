@@ -218,7 +218,7 @@ class BlockInactive {
 			return false;
 		}
 
-		$performer = User::newFromId( 0 );
+		$performer = User::newSystemUser( 'BlockInactive extension', [ 'steal' => true ] );
 		$reason = 'Automatically blocked for inactivity';
 
 		$block->setTarget( $user->getName() );
