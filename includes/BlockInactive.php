@@ -3,10 +3,10 @@
 namespace MediaWiki\Extension\BlockInactive;
 
 use ManualLogEntry;
+use MediaWiki\Block\BlockUser;
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\MediaWikiServices;
 use MWException;
-use SpecialBlock;
 use User;
 
 class BlockInactive {
@@ -229,7 +229,7 @@ class BlockInactive {
 		$block->isCreateAccountBlocked( false ); // Do not block account creation
 		$block->isEmailBlocked( false ); // Do not block emails
 		$block->isUsertalkEditAllowed( false );
-		$block->setExpiry( SpecialBlock::parseExpiryInput( 'infinity' ) );
+		$block->setExpiry( BlockUser::parseExpiryInput( 'infinity' ) );
 
 		if ( $priorBlock === null ) {
 			$success = $block->insert();
