@@ -268,7 +268,7 @@ class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 		// Ignores invalid
 		$this->assertFalse(
 			BlockInactive::getInstance()->blockUser(
-				User::newFromId( 0 )
+				$this->getServiceContainer()->getUserFactory()->newFromId( 0 )
 			)
 		);
 		// Clean up the test user database (that's safe)

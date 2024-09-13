@@ -4,22 +4,27 @@ namespace MediaWiki\Extension\BlockInactive;
 
 use Html;
 use IDatabase;
+use MediaWiki\User\UserFactory;
 use MWException;
 use OutputPage;
 use QueryPage;
 use Skin;
 use SpecialPage;
 use stdClass;
-use User;
 use Wikimedia\Rdbms\IResultWrapper;
 
 class SpecialBlockInactive extends QueryPage {
 
+	private UserFactory $userFactory;
+
 	/**
 	 * @inheritDoc
 	 */
-	public function __construct() {
+	public function __construct(
+		UserFactory $userFactory
+	) {
 		parent::__construct( 'BlockInactive', 'blockinactive' );
+		$this->userFactory = $userFactory;
 	}
 
 	/**
@@ -149,7 +154,7 @@ class SpecialBlockInactive extends QueryPage {
 	 */
 	protected function outputTableRow( stdClass $row ) {
 		$linkRenderer = $this->getLinkRenderer();
-		$user = User::newFromId( $row->user_id );
+		$user = $this->userFactory->newFromId( $row->user_id );
 		$days = $this->daysSinceLogin( $user->getDBTouched() );
 		$emailTs = $row->ba_sent_ts ? $row->ba_sent_ts : null;
 		$row = Html::rawElement(

@@ -121,8 +121,9 @@ class BlockInactive {
 		);
 		$results = [];
 		$permissionManager = MediaWikiServices::getInstance()->getPermissionManager();
+		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		foreach ( $res as $row ) {
-			$user = User::newFromId( $row->user_id );
+			$user = $userFactory->newFromId( $row->user_id );
 			// Exclude users with 'alwaysactive' right
 			if ( $permissionManager->userHasRight( $user, 'alwaysactive' ) ) {
 				continue;
