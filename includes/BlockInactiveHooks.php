@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\BlockInactive;
 
-use DatabaseUpdater;
-use User;
+use MediaWiki\Installer\DatabaseUpdater;
+use MediaWiki\User\User;
 
 class BlockInactiveHooks implements
 	\MediaWiki\Hook\UserLoginCompleteHook,

@@ -2,15 +2,15 @@
 
 namespace MediaWiki\Extension\BlockInactive;
 
-use Html;
-use IDatabase;
+use MediaWiki\Html\Html;
+use MediaWiki\Output\OutputPage;
+use MediaWiki\SpecialPage\QueryPage;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\User\UserFactory;
 use MWException;
-use OutputPage;
-use QueryPage;
 use Skin;
-use SpecialPage;
 use stdClass;
+use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\IResultWrapper;
 
 class SpecialBlockInactive extends QueryPage {

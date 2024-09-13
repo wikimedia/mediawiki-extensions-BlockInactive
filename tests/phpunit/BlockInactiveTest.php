@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\BlockInactive;
 
+use MediaWiki\User\User;
 use MediaWikiIntegrationTestCase;
-use User;
 
 /**
  * @covers \MediaWiki\Extension\BlockInactive\BlockInactive

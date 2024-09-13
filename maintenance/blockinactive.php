@@ -3,8 +3,8 @@
 namespace MediaWiki\Extension\BlockInactive;
 
 use Maintenance;
-use Status;
-use User;
+use MediaWiki\Status\Status;
+use MediaWiki\User\User;
 
 if ( getenv( 'MW_INSTALL_PATH' ) ) {
 	require_once getenv( 'MW_INSTALL_PATH' ) . '/maintenance/Maintenance.php';
