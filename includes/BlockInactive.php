@@ -6,8 +6,8 @@ use ManualLogEntry;
 use MediaWiki\Block\BlockUser;
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\User;
 use MWException;
-use User;
 
 class BlockInactive {
 
