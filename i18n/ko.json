@@ -5,6 +5,8 @@
 			"Yunbj"
 		]
 	},
+	"blockinactive-desc": "마지막 로그인 이후 특정 기간이 지나도록 로그인하지 않은 모든 사용자를 차단합니다.",
+	"blockinactive-special-intro": "아래는 차단 대기 중인 비활동 사용자 목록입니다. 마지막 로그인 날짜가 '''$1'''일 이상인 사용자는 비활동 사용자로 간주되며 마지막 로그인 이후 '''$2'''일 후에 차단됩니다. 차단되기 '''$3'''일 전에 여러 경고 이메일을 받으며 실제 차단 이후 한 차례의 이메일을 받습니다.",
 	"blockinactive": "비활성화된 계정 차단",
 	"blockinactive-table-username": "사용자 이름",
 	"blockinactive-table-userid": "사용자 아이디",
@@ -16,7 +18,9 @@
 	"blockinactive-config-daysblock": "차단을 시작할 날짜",
 	"blockinactive-config-warningdaysleft": "차단에 대한 사전 주의 경고를 보낼 날짜",
 	"blockinactive-config-mail-subject": "경고! 위키 계정이 곧 차단됩니다.",
+	"blockinactive-config-mail-body": "당신의 위키 계정은 비활성화되어 있기 때문에 곧 자동으로 차단됩니다. 이를 방지하려면 {{SITENAME}}에 로그인해 주십시오. 그러면 당신의 계정이 활성화되고 차단이 발생하지 않습니다.",
 	"blockinactive-config-mail-block-subject": "당신의 위키 계정이 차단되었습니다",
+	"blockinactive-config-mail-block-body": "당신의 위키 계정은 비활성화되어 자동으로 차단되었습니다. 계정을 복구하려면 {{SITENAME}} 시스템 관리자에게 문의해 주십시오.",
 	"action-blockinactive": "비활성 계정들을 차단할",
 	"right-blockinactive": "비활성 계정들을 차단합니다.",
 	"right-alwaysactive": "비활성화 차단을 우회합니다.",
