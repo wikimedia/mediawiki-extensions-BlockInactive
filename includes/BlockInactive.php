@@ -105,7 +105,7 @@ class BlockInactive {
 	 *
 	 * @return User[]
 	 */
-	public function getInactiveUsers( int $threshold = null ): array {
+	public function getInactiveUsers( ?int $threshold = null ): array {
 		if ( $threshold === null ) {
 			$threshold = $this->getThreshold();
 		}
@@ -297,7 +297,7 @@ class BlockInactive {
 	 *
 	 * @return BlockInactiveMailRecord[]
 	 */
-	public function getMailsSent( User $user, int $type = null, int $ts = null ): array {
+	public function getMailsSent( User $user, ?int $type = null, ?int $ts = null ): array {
 		return BlockInactiveMailRecord::findForUserId( $user->getId(), 0, $type, $ts );
 	}
 

@@ -91,7 +91,7 @@ class BlockInactiveMailRecord {
 	 *
 	 * @return BlockInactiveMailRecord[]
 	 */
-	public static function findForUserId( int $userId, int $limit = 0, int $type = null, int $ts = null ): array {
+	public static function findForUserId( int $userId, int $limit = 0, ?int $type = null, ?int $ts = null ): array {
 		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		$query = self::getQuery(
 			$userId,
@@ -127,7 +127,7 @@ class BlockInactiveMailRecord {
 		int $userId,
 		string $sentEmail,
 		int $mailType,
-		int $ts = null
+		?int $ts = null
 	) {
 		$dbw = MediaWikiServices::getInstance()->getConnectionProvider()->getPrimaryDatabase();
 		$row = $dbw->selectField(
@@ -221,7 +221,7 @@ class BlockInactiveMailRecord {
 	 *
 	 * @return array
 	 */
-	private static function getQuery( int $userId, int $limit = 0, int $type = null, int $ts = null ) {
+	private static function getQuery( int $userId, int $limit = 0, ?int $type = null, ?int $ts = null ) {
 		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		$conds = [
 			'ba_user_id' => $userId
