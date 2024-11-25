@@ -10,7 +10,7 @@
 	"blockinactive-table-username": "Uporabniško ime",
 	"blockinactive-table-userid": "ID uporabnika",
 	"blockinactive-table-inactivetime": "Čas neaktivnosti",
-	"blockinactive-table-emailsent": "E-pismo poslano",
+	"blockinactive-table-emailsent": "E-poštno sporočilo poslano",
 	"blockinactive-table-actions": "Dejanja",
 	"blockinactive-action-block": "Blokiranje",
 	"blockinactive-config-threshold": "Dnevi za obravnavanje računa kot neaktivnega",
