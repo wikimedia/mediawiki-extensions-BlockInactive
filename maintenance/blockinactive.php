@@ -47,15 +47,17 @@ class BlockInactiveMaintenance extends Maintenance {
 		}
 
 		$warningScheduleDaysLeft = $this->getConfig()->get( 'BlockInactiveWarningDaysLeft' );
+		$services = $this->getServiceContainer();
+		$blockInactive = $services->getService( 'BlockInactive.BlockInactive' );
 
 		// Find all inactive users
-		$inactiveUsers = BlockInactive::getInstance()->getInactiveUsers();
+		$inactiveUsers = $blockInactive->getInactiveUsers();
 
 		// Print intro and config values
 		$this->output( "\nLooking for users inactive for >= "
-			. BlockInactive::getInstance()->getThreshold() / 60 / 60 / 24 . " days" );
+			. $blockInactive->getThreshold() / 60 / 60 / 24 . " days" );
 		$this->output( "\nBlocking users inactive for >= "
-			. BlockInactive::getInstance()->getBlockTime() / 60 / 60 / 24 . " days" );
+			. $blockInactive->getBlockTime() / 60 / 60 / 24 . " days" );
 		$this->output( "\nSending warnings on the following schedule: "
 			. " [ "
 			. implode( ', ', $warningScheduleDaysLeft )
@@ -78,8 +80,8 @@ class BlockInactiveMaintenance extends Maintenance {
 				$anyEmailSent = false;
 			}
 
-			$daysLeftUntilBlock = BlockInactive::getInstance()->daysLeft( $inactiveUser );
-			$futureBlockTime = BlockInactive::getInstance()->getUserBlockTime( $inactiveUser );
+			$daysLeftUntilBlock = $blockInactive->daysLeft( $inactiveUser );
+			$futureBlockTime = $blockInactive->getUserBlockTime( $inactiveUser );
 
 			$this->output( "\n" . $inactiveUser->getName() . " [ " . $inactiveUser->getId() . " ] " );
 			$this->output( "\n\tInactive since: "
@@ -102,7 +104,7 @@ class BlockInactiveMaintenance extends Maintenance {
 					$this->sendBlockEmail( $inactiveUser );
 					$anyEmailSent = true;
 					if ( !$noblock ) {
-						BlockInactive::getInstance()->blockUser( $inactiveUser );
+						$blockInactive->blockUser( $inactiveUser );
 					}
 				} else {
 					$this->output( "\n\tNot actually sending in DRY-mode, not blocking in DRY-mode" );
@@ -119,7 +121,7 @@ class BlockInactiveMaintenance extends Maintenance {
 
 			// Check if by chance user has any missed warnings due to the script
 			// not ran at some point
-			$missedWarnings = BlockInactive::getInstance()->getWarningsMissed( $inactiveUser );
+			$missedWarnings = $blockInactive->getWarningsMissed( $inactiveUser );
 			if ( count( $missedWarnings ) ) {
 				// There are missed warnings, pick the most recent missing one
 				$days = array_column( $missedWarnings, 'day' );
@@ -148,7 +150,7 @@ class BlockInactiveMaintenance extends Maintenance {
 			// accordingly to the schedule
 			if (
 				// TODO: this might be improved
-				BlockInactive::getInstance()->matchesSchedule( $inactiveUser )
+				$blockInactive->matchesSchedule( $inactiveUser )
 			) {
 				$this->output( "\n\tSending warning email to " . $inactiveUser->getEmail() );
 				if ( !$dry ) {

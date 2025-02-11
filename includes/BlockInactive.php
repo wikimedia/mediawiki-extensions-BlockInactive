@@ -5,23 +5,44 @@ namespace MediaWiki\Extension\BlockInactive;
 use ManualLogEntry;
 use MediaWiki\Block\BlockUser;
 use MediaWiki\Block\DatabaseBlock;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Block\DatabaseBlockStore;
+use MediaWiki\Config\ServiceOptions;
+use MediaWiki\HookContainer\HookContainer;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\User\User;
+use MediaWiki\User\UserFactory;
 use MWException;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 class BlockInactive {
 
-	/** @var BlockInactive|null */
-	private static $instance = null;
+	public const CONSTRUCTOR_OPTIONS = [
+		'BlockInactiveThreshold',
+		'BlockInactiveDaysBlock',
+		'BlockInactiveWarningDaysLeft'
+	];
 
-	/**
-	 * @return BlockInactive
-	 */
-	public static function getInstance(): BlockInactive {
-		if ( self::$instance === null ) {
-			self::$instance = new self();
-		}
-		return self::$instance;
+	private ServiceOptions $config;
+	private PermissionManager $permissionManager;
+	private IConnectionProvider $connectionProvider;
+	private UserFactory $userFactory;
+	private HookContainer $hookContainer;
+	private DatabaseBlockStore $databaseBlockStore;
+
+	public function __construct(
+		ServiceOptions $config,
+		PermissionManager $permissionManager,
+		IConnectionProvider $connectionProvider,
+		UserFactory $userFactory,
+		HookContainer $hookContainer,
+		DatabaseBlockStore $databaseBlockStore
+	) {
+		$this->config = $config;
+		$this->permissionManager = $permissionManager;
+		$this->connectionProvider = $connectionProvider;
+		$this->userFactory = $userFactory;
+		$this->hookContainer = $hookContainer;
+		$this->databaseBlockStore = $databaseBlockStore;
 	}
 
 	/**
@@ -32,9 +53,7 @@ class BlockInactive {
 	 * @return false
 	 */
 	public function skipUser( User $user ): bool {
-		return MediaWikiServices::getInstance()
-			->getPermissionManager()
-			->userHasRight( $user, 'alwaysactive' );
+		return $this->permissionManager->userHasRight( $user, 'alwaysactive' );
 	}
 
 	/**
@@ -44,7 +63,7 @@ class BlockInactive {
 	 */
 	public function getQuery( int $threshold ): array {
 		$cutoff_timestamp = wfTimestamp( TS_MW, time() - $threshold );
-		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
+		$dbr = $this->connectionProvider->getReplicaDatabase();
 
 		$revision_max_ts_subquery = $dbr->buildSelectSubquery(
 			[ 'r' => "revision" ],
@@ -109,7 +128,7 @@ class BlockInactive {
 		if ( $threshold === null ) {
 			$threshold = $this->getThreshold();
 		}
-		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
+		$dbr = $this->connectionProvider->getReplicaDatabase();
 		$query = $this->getQuery( $threshold );
 		$res = $dbr->select(
 			$query['tables'],
@@ -120,12 +139,10 @@ class BlockInactive {
 			$query['join_conds']
 		);
 		$results = [];
-		$permissionManager = MediaWikiServices::getInstance()->getPermissionManager();
-		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		foreach ( $res as $row ) {
-			$user = $userFactory->newFromId( $row->user_id );
+			$user = $this->userFactory->newFromId( $row->user_id );
 			// Exclude users with 'alwaysactive' right
-			if ( $permissionManager->userHasRight( $user, 'alwaysactive' ) ) {
+			if ( $this->permissionManager->userHasRight( $user, 'alwaysactive' ) ) {
 				continue;
 			}
 			$results[] = $user;
@@ -147,7 +164,7 @@ class BlockInactive {
 	 * @return int Threshold value in seconds
 	 */
 	public function getThreshold(): int {
-		return (int)MediaWikiServices::getInstance()->getMainConfig()->get( 'BlockInactiveThreshold' )
+		return (int)$this->config->get( 'BlockInactiveThreshold' )
 			   * 60 * 60 * 24;
 	}
 
@@ -155,14 +172,14 @@ class BlockInactive {
 	 * @return int[] Warning messages schedule
 	 */
 	public function getWarningSchedule(): array {
-		return MediaWikiServices::getInstance()->getMainConfig()->get( 'BlockInactiveWarningDaysLeft' );
+		return $this->config->get( 'BlockInactiveWarningDaysLeft' );
 	}
 
 	/**
 	 * @return int Block time value in seconds
 	 */
 	public function getBlockTime(): int {
-		return (int)MediaWikiServices::getInstance()->getMainConfig()->get( 'BlockInactiveDaysBlock' )
+		return (int)$this->config->get( 'BlockInactiveDaysBlock' )
 			   * 60 * 60 * 24;
 	}
 
@@ -212,7 +229,7 @@ class BlockInactive {
 			return false;
 		}
 
-		$priorBlock = DatabaseBlock::newFromTarget( $user );
+		$priorBlock = $this->databaseBlockStore->newFromTarget( $user );
 		if ( $priorBlock === null ) {
 			$block = new DatabaseBlock();
 		} else {
@@ -233,14 +250,14 @@ class BlockInactive {
 		$block->setExpiry( BlockUser::parseExpiryInput( 'infinity' ) );
 
 		if ( $priorBlock === null ) {
-			$success = $block->insert();
+			$success = $this->databaseBlockStore->insertBlock( $block );
 		} else {
-			$success = $block->update();
+			$success = $this->databaseBlockStore->updateBlock( $block );
 		}
 
 		if ( $success ) {
 			// Fire any post block hooks
-			MediaWikiServices::getInstance()->getHookContainer()->run(
+			$this->hookContainer->run(
 				'BlockIpComplete',
 				[
 					$block, $performer, $priorBlock
@@ -279,11 +296,8 @@ class BlockInactive {
 	 * @return bool
 	 */
 	public function matchesSchedule( User $user ): bool {
-		$warningScheduleDaysLeft = MediaWikiServices::getInstance()
-			->getMainConfig()
-			->get( 'BlockInactiveWarningDaysLeft' );
-		$daysLeftUntilBlock = self::getInstance()
-			->daysLeft( $user );
+		$warningScheduleDaysLeft = $this->config->get( 'BlockInactiveWarningDaysLeft' );
+		$daysLeftUntilBlock = $this->daysLeft( $user );
 		return in_array( $daysLeftUntilBlock, $warningScheduleDaysLeft );
 	}
 

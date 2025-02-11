@@ -16,15 +16,18 @@ use Wikimedia\Rdbms\IResultWrapper;
 class SpecialBlockInactive extends QueryPage {
 
 	private UserFactory $userFactory;
+	private BlockInactive $blockInactive;
 
 	/**
 	 * @inheritDoc
 	 */
 	public function __construct(
-		UserFactory $userFactory
+		UserFactory $userFactory,
+		BlockInactive $blockInactive
 	) {
 		parent::__construct( 'BlockInactive', 'blockinactive' );
 		$this->userFactory = $userFactory;
+		$this->blockInactive = $blockInactive;
 	}
 
 	/**
@@ -39,8 +42,8 @@ class SpecialBlockInactive extends QueryPage {
 	 * @inheritDoc
 	 */
 	public function getQueryInfo() {
-		return BlockInactive::getInstance()->getQuery(
-			BlockInactive::getInstance()->getThreshold()
+		return $this->blockInactive->getQuery(
+			$this->blockInactive->getThreshold()
 		);
 	}
 
@@ -96,7 +99,7 @@ class SpecialBlockInactive extends QueryPage {
 			'blockinactive-special-intro',
 			$this->getConfig()->get( 'BlockInactiveThreshold' ),
 			$this->getConfig()->get( 'BlockInactiveDaysBlock' ),
-			implode( ', ', BlockInactive::getInstance()->getWarningSchedule() )
+			implode( ', ', $this->blockInactive->getWarningSchedule() )
 		);
 		$this->outputTableStart();
 		foreach ( $res as $row ) {

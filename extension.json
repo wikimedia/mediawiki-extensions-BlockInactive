@@ -32,10 +32,14 @@
 		"BlockInactive": {
 			"class": "MediaWiki\\Extension\\BlockInactive\\SpecialBlockInactive",
 			"services": [
-				"UserFactory"
+				"UserFactory",
+				"BlockInactive.BlockInactive"
 			]
 		}
 	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"ExtensionMessagesFiles": {
 		"BlockInactiveAlias": "includes/BlockInactive.alias.php"
 	},
