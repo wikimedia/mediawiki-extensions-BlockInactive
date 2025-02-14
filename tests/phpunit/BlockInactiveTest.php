@@ -12,11 +12,6 @@ use MediaWikiIntegrationTestCase;
  */
 class BlockInactiveTest extends MediaWikiIntegrationTestCase {
 
-	public function setUp(): void {
-		parent::setUp();
-		$this->tablesUsed[] = 'blockinactive_emails';
-	}
-
 	/**
 	 * @covers \MediaWiki\Extension\BlockInactive\BlockInactive::getQuery
 	 */
