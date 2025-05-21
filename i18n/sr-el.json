@@ -2,9 +2,14 @@
 	"@metadata": {
 		"authors": []
 	},
+	"blockinactive": "Blokiranje neaktivnih naloga",
 	"blockinactive-table-username": "Korisničko ime",
 	"blockinactive-table-userid": "ID korisnika",
+	"blockinactive-table-inactivetime": "Vreme neaktivnosti",
 	"blockinactive-table-emailsent": "Imejl je poslat",
 	"blockinactive-table-actions": "Radnje",
-	"blockinactive-action-block": "Blokiraj"
+	"blockinactive-action-block": "Blokiraj",
+	"blockinactive-config-mail-block-subject": "Vaš viki nalog je blokiran",
+	"action-blockinactive": "blokirate neaktivne naloge",
+	"right-blockinactive": "blokiranje neaktivnih naloga"
 }
