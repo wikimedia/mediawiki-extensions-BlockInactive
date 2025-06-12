@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mehman97"
+		]
+	},
+	"blockinactive-table-username": "მომხმარებლის სახელი",
+	"blockinactive-table-userid": "მომხმარებლის ID",
+	"blockinactive-table-inactivetime": "არააქტიურობის დრო",
+	"blockinactive-table-emailsent": "ელ. ფოსტა გაგზავნილია",
+	"blockinactive-table-actions": "მოქმედებები",
+	"blockinactive-action-block": "ბლოკი"
+}
