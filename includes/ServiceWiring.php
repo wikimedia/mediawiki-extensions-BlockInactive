@@ -16,7 +16,8 @@ return [
 			$services->getConnectionProvider(),
 			$services->getUserFactory(),
 			$services->getHookContainer(),
-			$services->getDatabaseBlockStore()
+			$services->getDatabaseBlockStore(),
+			$services->getBlockTargetFactory()
 		);
 	},
 ];

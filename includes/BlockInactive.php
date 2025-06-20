@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\BlockInactive;
 
 use ManualLogEntry;
+use MediaWiki\Block\BlockTargetFactory;
 use MediaWiki\Block\BlockUser;
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\Block\DatabaseBlockStore;
@@ -28,6 +29,7 @@ class BlockInactive {
 	private UserFactory $userFactory;
 	private HookContainer $hookContainer;
 	private DatabaseBlockStore $databaseBlockStore;
+	private BlockTargetFactory $blockTargetFactory;
 
 	public function __construct(
 		ServiceOptions $config,
@@ -35,7 +37,8 @@ class BlockInactive {
 		IConnectionProvider $connectionProvider,
 		UserFactory $userFactory,
 		HookContainer $hookContainer,
-		DatabaseBlockStore $databaseBlockStore
+		DatabaseBlockStore $databaseBlockStore,
+		BlockTargetFactory $blockTargetFactory
 	) {
 		$this->config = $config;
 		$this->permissionManager = $permissionManager;
@@ -43,6 +46,7 @@ class BlockInactive {
 		$this->userFactory = $userFactory;
 		$this->hookContainer = $hookContainer;
 		$this->databaseBlockStore = $databaseBlockStore;
+		$this->blockTargetFactory = $blockTargetFactory;
 	}
 
 	/**
@@ -239,7 +243,7 @@ class BlockInactive {
 		$performer = User::newSystemUser( 'BlockInactive extension', [ 'steal' => true ] );
 		$reason = 'Automatically blocked for inactivity';
 
-		$block->setTarget( $user->getName() );
+		$block->setTarget( $this->blockTargetFactory->newFromUser( $user ) );
 		$block->setBlocker( $performer );
 		$block->setReason( $reason );
 		$block->isHardblock( true );
