@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wutkh"
+		]
+	},
+	"blockinactive-desc": "บล็อกผู้ใช้ทั้งหมดที่ไม่ได้เข้าสู่ระบบก่อนครบจำนวนวันที่กำหนดนับตั้งแต่ครั้งสุดท้ายที่เข้าสู่ระบบ",
+	"blockinactive-special-intro": "ด้านล่างนี้เป็นรายการผู้ใช้ที่ไม่มีการใช้งานที่รอพิจารณาการถูกบล็อก ผู้ใช้ที่มีจำนวนวันเข้าสู่ระบบ >='''$1''' วันถือว่าไม่มีการใช้งานและจะถูกบล็อกหลัง '''$2'' วันนับแต่การเข้าสู่ระบบครั้งล่าสุด โดยที่ผู้ใช้จะได้รับอีเมลแจ้งเตือน '''$3''' วันก่อนถูกบล็อกและจะได้รับอีเมลอีกฉบับหนึ่งหลังจากถูกบล็อกจริง",
+	"blockinactive": "บล็อกบัญชีที่ไม่มีการใช้งาน",
+	"blockinactive-table-username": "ชื่อผู้ใช้",
+	"blockinactive-table-userid": "รหัสผู้ใช้",
+	"blockinactive-table-inactivetime": "เวลาที่ไม่มีการใช้งาน",
+	"blockinactive-table-emailsent": "ส่งอีเมลแล้ว",
+	"blockinactive-table-actions": "การดําเนินการ",
+	"blockinactive-action-block": "บล็อก",
+	"blockinactive-config-threshold": "จำนวนวันที่นับว่าบัญชีนั้นไม่มีการใช้งาน",
+	"blockinactive-config-daysblock": "วันเริ่มบล็อก",
+	"blockinactive-config-warningdaysleft": "วันส่งคำแจ้งเตือนการบล็อก",
+	"blockinactive-config-mail-subject": "คำเตือน! บัญชีวิกิของคุณจะถูกบล็อกเร็ว ๆ นี้",
+	"blockinactive-config-mail-body": "บัญชีวิกิของคุณจะถูกบล็อกโดยอัตโนมัติในเร็ว ๆ นี้ เนื่องจากไม่มีการใช้งาน เพื่อหลีกเลี่ยงปัญหานี้ โปรดเข้าสู่ระบบบน {{SITENAME}} เพื่อให้บัญชีของคุณมีการใช้งานและป้องกันไม่ให้เกิดการบล็อก",
+	"blockinactive-config-mail-block-subject": "บัญชีวิกิของคุณถูกบล็อก",
+	"blockinactive-config-mail-block-body": "บัญชีวิกิของคุณถูกบล็อกโดยอัตโนมัติเนื่องจากไม่มีการใช้งาน หากต้องการกู้คืนบัญชี โปรดติดต่อผู้ดูแลระบบบน {{SITENAME}}",
+	"action-blockinactive": "บล็อกบัญชีที่ไม่มีการใช้งาน",
+	"right-blockinactive": "บล็อกบัญชีที่ไม่มีการใช้งาน",
+	"right-alwaysactive": "ข้ามการบล็อกเมื่อไม่มีการใช้งาน",
+	"action-alwaysactive": "ข้ามการบล็อกเมื่อไม่มีการใช้งาน"
+}
