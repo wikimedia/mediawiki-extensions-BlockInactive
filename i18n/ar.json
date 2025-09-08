@@ -6,7 +6,8 @@
 			"أَحمد",
 			"محمد أحمد عبد الفتاح",
 			"Dr-Taher",
-			"NEHAOUA"
+			"NEHAOUA",
+			"Mohammed Qays"
 		]
 	},
 	"blockinactive-desc": "يحظر جميع المستخدمين الذين لم يسجلوا الدخول قبل انقضاء عدد معين من الأيام منذ آخر تسجيل دخول لهم.",
@@ -17,7 +18,7 @@
 	"blockinactive-table-inactivetime": "وقت غير نشط",
 	"blockinactive-table-emailsent": "أُرسل البريد الإلكتروني",
 	"blockinactive-table-actions": "الإجراءات",
-	"blockinactive-action-block": "حظر",
+	"blockinactive-action-block": "منع",
 	"blockinactive-config-threshold": "أيام معاملة الحساب على أنه غير نشط",
 	"blockinactive-config-daysblock": "أيام لبدء المنع",
 	"blockinactive-config-warningdaysleft": "أيام لإرسال تحذير احترازي بشأن المنع",
@@ -25,7 +26,7 @@
 	"blockinactive-config-mail-body": "سيتم حظر حساب wiki الخاص بك تلقائيًا قريبًا لأنه كان غير نشط. لتجنب ذلك، يرجى تسجيل الدخول إلى {{SITENAME}}، مما يجعل حسابك نشطًا ويمنع حدوث المنع.",
 	"blockinactive-config-mail-block-subject": "تم منع حساب المستخدم الخاص بك",
 	"blockinactive-config-mail-block-body": "تم حظر حساب wiki الخاص بك تلقائيًا لأنه كان غير نشط. لإعادة حسابك، يرجى الاتصال بأحد إداريي {{SITENAME}}.",
-	"action-blockinactive": "حظر الحسابات غير النشطة",
+	"action-blockinactive": "منع الحسابات غير النشطة",
 	"right-blockinactive": "منع الحسابات غير النشطة",
 	"right-alwaysactive": "تجاوز المنع لعدم النشاط",
 	"action-alwaysactive": "تجاوز المنع لعدم النشاط"
