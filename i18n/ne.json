@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"बडा काजी"
+		]
+	},
+	"blockinactive-table-username": "प्रयोगकर्ता नाम",
+	"blockinactive-table-userid": "प्रयोगकर्ता आईडी",
+	"blockinactive-table-inactivetime": "निष्क्रिय समय",
+	"blockinactive-table-emailsent": "इमेल पठाइयो",
+	"blockinactive-table-actions": "कार्यहरू",
+	"blockinactive-action-block": "निषेध गर्नुहोस्",
+	"blockinactive-config-threshold": "खातालाई निष्क्रिय मानिने दिनहरू",
+	"blockinactive-config-daysblock": "अवरुद्ध गर्न सुरु गर्ने दिनहरू",
+	"blockinactive-config-mail-subject": "चेतावनी! तपाईंको विकी खाता चाँडै नै निषेध गरिनेछ।",
+	"blockinactive-config-mail-block-subject": "तपाईंको विकी खाता निषेध गरिएको छ।",
+	"action-blockinactive": "निष्क्रिय खाताहरू निषेध गर्नुहोस्",
+	"right-blockinactive": "निष्क्रिय खाताहरू निषेध गर्नुहोस्"
+}
