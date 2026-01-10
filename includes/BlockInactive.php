@@ -23,30 +23,15 @@ class BlockInactive {
 		'BlockInactiveWarningDaysLeft'
 	];
 
-	private ServiceOptions $config;
-	private PermissionManager $permissionManager;
-	private IConnectionProvider $connectionProvider;
-	private UserFactory $userFactory;
-	private HookContainer $hookContainer;
-	private DatabaseBlockStore $databaseBlockStore;
-	private BlockTargetFactory $blockTargetFactory;
-
 	public function __construct(
-		ServiceOptions $config,
-		PermissionManager $permissionManager,
-		IConnectionProvider $connectionProvider,
-		UserFactory $userFactory,
-		HookContainer $hookContainer,
-		DatabaseBlockStore $databaseBlockStore,
-		BlockTargetFactory $blockTargetFactory
+		private readonly ServiceOptions $config,
+		private readonly PermissionManager $permissionManager,
+		private readonly IConnectionProvider $connectionProvider,
+		private readonly UserFactory $userFactory,
+		private readonly HookContainer $hookContainer,
+		private readonly DatabaseBlockStore $databaseBlockStore,
+		private readonly BlockTargetFactory $blockTargetFactory,
 	) {
-		$this->config = $config;
-		$this->permissionManager = $permissionManager;
-		$this->connectionProvider = $connectionProvider;
-		$this->userFactory = $userFactory;
-		$this->hookContainer = $hookContainer;
-		$this->databaseBlockStore = $databaseBlockStore;
-		$this->blockTargetFactory = $blockTargetFactory;
 	}
 
 	/**

@@ -7,24 +7,6 @@ use stdClass;
 
 class BlockInactiveMailRecord {
 
-	/** @var int */
-	protected $userId;
-
-	/**
-	 * UNIX timestamp of the record
-	 * @var int
-	 */
-	protected $sentTs;
-
-	/** @var string */
-	protected $sentEmail;
-
-	/** @var int */
-	protected $sentAttempt;
-
-	/** @var int */
-	protected $type;
-
 	/**
 	 * Email warns a user about upcoming block
 	 */
@@ -157,25 +139,13 @@ class BlockInactiveMailRecord {
 		);
 	}
 
-	/**
-	 * @param int $userId
-	 * @param int $sentTs
-	 * @param string $sentEmail
-	 * @param int $sentAttempt
-	 * @param int $mailType
-	 */
 	public function __construct(
-		int $userId,
-		int $sentTs,
-		string $sentEmail,
-		int $sentAttempt,
-		int $mailType
+		private readonly int $userId,
+		private readonly int $sentTs,
+		private readonly string $sentEmail,
+		private readonly int $sentAttempt,
+		private readonly int $type,
 	) {
-		$this->userId = $userId;
-		$this->sentTs = $sentTs;
-		$this->sentEmail = $sentEmail;
-		$this->sentAttempt = $sentAttempt;
-		$this->type = $mailType;
 	}
 
 	/**

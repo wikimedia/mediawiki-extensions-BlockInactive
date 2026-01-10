@@ -15,19 +15,14 @@ use Wikimedia\Rdbms\IResultWrapper;
 
 class SpecialBlockInactive extends QueryPage {
 
-	private UserFactory $userFactory;
-	private BlockInactive $blockInactive;
-
 	/**
 	 * @inheritDoc
 	 */
 	public function __construct(
-		UserFactory $userFactory,
-		BlockInactive $blockInactive
+		private readonly UserFactory $userFactory,
+		private readonly BlockInactive $blockInactive,
 	) {
 		parent::__construct( 'BlockInactive', 'blockinactive' );
-		$this->userFactory = $userFactory;
-		$this->blockInactive = $blockInactive;
 	}
 
 	/**
