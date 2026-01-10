@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\BlockInactive;
 
-use Maintenance;
+use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\Status\Status;
 use MediaWiki\User\User;
 

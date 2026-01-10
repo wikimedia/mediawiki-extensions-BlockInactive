@@ -2,13 +2,13 @@
 
 namespace MediaWiki\Extension\BlockInactive;
 
+use MediaWiki\Exception\MWException;
 use MediaWiki\Html\Html;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Skin\Skin;
 use MediaWiki\SpecialPage\QueryPage;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\User\UserFactory;
-use MWException;
-use Skin;
 use stdClass;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\IResultWrapper;

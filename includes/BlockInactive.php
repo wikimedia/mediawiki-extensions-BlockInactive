@@ -2,17 +2,17 @@
 
 namespace MediaWiki\Extension\BlockInactive;
 
-use ManualLogEntry;
 use MediaWiki\Block\BlockTargetFactory;
 use MediaWiki\Block\BlockUser;
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\Block\DatabaseBlockStore;
 use MediaWiki\Config\ServiceOptions;
+use MediaWiki\Exception\MWException;
 use MediaWiki\HookContainer\HookContainer;
+use MediaWiki\Logging\ManualLogEntry;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
-use MWException;
 use Wikimedia\Rdbms\IConnectionProvider;
 
 class BlockInactive {
