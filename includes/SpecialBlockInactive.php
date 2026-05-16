@@ -22,7 +22,12 @@ class SpecialBlockInactive extends QueryPage {
 		private readonly UserFactory $userFactory,
 		private readonly BlockInactive $blockInactive,
 	) {
-		parent::__construct( 'BlockInactive', 'blockinactive' );
+		parent::__construct( 'BlockInactive' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'blockinactive';
 	}
 
 	/**
