@@ -13,7 +13,7 @@
 	"blockinactive-table-userid": "사용자 아이디",
 	"blockinactive-table-inactivetime": "비활성화 시간",
 	"blockinactive-table-emailsent": "이메일을 보냈습니다",
-	"blockinactive-table-actions": "동작",
+	"blockinactive-table-actions": "작업",
 	"blockinactive-action-block": "차단",
 	"blockinactive-config-threshold": "비활성 계정으로 처리하기 위한 날짜",
 	"blockinactive-config-daysblock": "차단을 시작할 날짜",
