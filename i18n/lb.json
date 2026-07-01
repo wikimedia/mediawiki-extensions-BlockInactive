@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"blockinactive": "Inaktiv Konte spären",
@@ -14,8 +15,8 @@
 	"blockinactive-config-threshold": "Deeg fir e Benotzerkont als inaktiv anzestufen",
 	"blockinactive-config-mail-subject": "Opgepasst! Äre Wiki-Benotzerkont gëtt geschwënn gespaart.",
 	"blockinactive-config-mail-block-subject": "Äre Wiki-Benotzerkont gouf gespaart",
-	"action-blockinactive": "Inaktiv Konte spären",
+	"action-blockinactive": "inaktiv Konten ze spären",
 	"right-blockinactive": "Inaktiv Konte spären",
-	"right-alwaysactive": "Spär duerch Inaktivitéit ëmgoen",
-	"action-alwaysactive": "Spär fir Inaktivitéit ëmgoen"
+	"right-alwaysactive": "Späre wéinst Inaktivitéit ëmgoen",
+	"action-alwaysactive": "Späre wéinst Inaktivitéit z'ëmgoen"
 }
