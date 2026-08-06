@@ -2,14 +2,28 @@
 	"@metadata": {
 		"authors": [
 			"Robfirstname",
-			"Veracious"
+			"Veracious",
+			"AF1011"
 		]
 	},
+	"blockinactive-desc": "Memblokir semua pengguna yang tidak masuk sebelum sejumlah hari tertentu berlalu sejak login terakhir mereka.",
+	"blockinactive-special-intro": "Berikut adalah daftar pengguna tidak aktif yang akan diblokir. Pengguna dengan tanggal log masuk terakhir >='''$1''' hari dianggap tidak aktif dan akan diblokir setelah '''$2''' hari sejak login terakhir mereka. Mereka akan menerima surel peringatan '''$3''' hari sebelum diblokir dan satu surel setelah pemblokiran sebenarnya.",
 	"blockinactive": "Blokir akun yang tidak aktif",
 	"blockinactive-table-username": "Nama pengguna",
+	"blockinactive-table-userid": "ID Pengguna",
+	"blockinactive-table-inactivetime": "Waktu tidak aktif",
 	"blockinactive-table-emailsent": "Surel terkirim",
 	"blockinactive-table-actions": "Tindakan",
 	"blockinactive-action-block": "Blokir",
+	"blockinactive-config-threshold": "Jumlah hari untuk memperlakukan akun sebagai tidak aktif",
+	"blockinactive-config-daysblock": "Hari untuk mulai pemblokiran",
+	"blockinactive-config-warningdaysleft": "Jumlah hari untuk mengirimkan peringatan pencegahan pemblokiran",
+	"blockinactive-config-mail-subject": "Peringatan! Akun wiki Anda akan segera diblokir",
+	"blockinactive-config-mail-body": "Akun wiki Anda akan segera diblokir secara otomatis karena tidak aktif. Untuk menghindari hal ini, silakan masuk ke {{SITENAME}}, yang akan mengaktifkan akun Anda dan mencegah pemblokiran terjadi.",
+	"blockinactive-config-mail-block-subject": "Akun wiki Anda telah diblokir",
+	"blockinactive-config-mail-block-body": "Akun wiki Anda telah diblokir secara otomatis karena tidak aktif. Untuk mengaktifkan kembali akun Anda, silakan hubungi sistem pengurus {{SITENAME}}.",
 	"action-blockinactive": "blokir akun yang tidak aktif",
-	"right-blockinactive": "Blokir akun yang tidak aktif"
+	"right-blockinactive": "Blokir akun yang tidak aktif",
+	"right-alwaysactive": "Lewati pemblokiran karena tidak aktif",
+	"action-alwaysactive": "melewati pemblokiran karena tidak aktif"
 }
