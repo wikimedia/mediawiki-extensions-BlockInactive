@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"blockinactive-desc": "Xanniba dhammaan isticmaalayaasha aan soo gelin ka hor inta aysan tirada maalmaha cayiman ka soo wareegin soo gelitaankoodii ugu dambeeyay.",
+	"blockinactive-special-intro": "Hoos waxaa ku qoran liiska isticmaalayaasha aan firfircoonayn ee sugaya in la xannibo. Isticmaalayaasha leh taariikh gelitaan ugu dambaysay oo ka weyn ama la mid ah >='''$1''' maalmood waxaa loo tixgeliyaa kuwo aan firfircoonayn, waxaana la xannibi doonaa marka ay ka soo wareegto '''$2''' maalmood gelitaankoodii ugu dambeeyay. Waxay heli doonaan iimayllo digniin ah '''$3''' maalm(ood) ka hor inta aan la xannibin iyo hal iimayl marka xannibaaddu si rasmi ah u dhacdo.",
+	"blockinactive": "Xannib akoonnada aan firfircoonayn",
+	"blockinactive-table-username": "Magaca isticmaalaha",
+	"blockinactive-table-userid": "Aqoonsiga isticmaalaha",
+	"blockinactive-table-inactivetime": "Waqtiga aan firfircoonayn",
+	"blockinactive-table-emailsent": "Iimayl waa la diray",
+	"blockinactive-table-actions": "Ficillada",
+	"blockinactive-action-block": "Xannib",
+	"blockinactive-config-threshold": "Maalmaha akoonka loogu tixgelinayo mid aan firfircoonayn",
+	"blockinactive-config-daysblock": "Maalmaha la bilaabayo xannibaadda",
+	"blockinactive-config-warningdaysleft": "Maalmaha la dirayo digniinta taxaddarka ee xannibaadda",
+	"blockinactive-config-mail-subject": "Digniin! Akoonkaaga wiki-ga dhawaan ayaa la xannibi doonaa",
+	"blockinactive-config-mail-body": "Akoonkaaga wiki-ga dhawaan si otomaatig ah ayaa loo xannibi doonaa maadaama uusan firfircoonayn. Si aad uga fogaato xannibaaddan, fadlan gal {{SITENAME}}, taas oo akoonkaaga ka dhigi doonta mid firfircoon oo ka hortagi doonta in la xannibo.",
+	"blockinactive-config-mail-block-subject": "Akoonkaaga wiki-ga waa laga xannibay",
+	"blockinactive-config-mail-block-body": "Akoonkaaga wiki-ga si otomaatig ah ayaa looga xannibay maadaama uusan firfircoonayn. Si akoonkaaga dib loogu soo celiyo, fadlan la xiriir maamulaha nidaamka {{SITENAME}}.",
+	"action-blockinactive": "xannib akoonnada aan firfircoonayn",
+	"right-blockinactive": "Xannib akoonnada aan firfircoonayn",
+	"right-alwaysactive": "Ka gudub xannibaadda sababta oo ah firfircooni la'aan",
+	"action-alwaysactive": "ka gudub xannibaadda sababta oo ah firfircooni la'aan"
+}
