@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"blockinactive-desc": "ټول هغه کارنانو باندې بنديز لگوي چې د وروستي ځل لپاره د ننوتلو راهيسې د يو ټاکلي شمېر ورځو څخه مخکې ننوتلي نه وي.",
+	"blockinactive-special-intro": "لاندې د ناکارندتيا له کبله بنديز لگېدونکو کارنانو نوملړ دی. هغه کارنان چې د  >='''$1''' ورځې مخکې يې وروستۍ ننوتنه کړې، ناکارنده گڼل کېږي او د دوی د وروستۍ ننوتلو راهيسي '''$2''' ورځ(ې) وروسته به پرې بنديز ولگول شي. دوی به له بنديز لگېدلو دمخه د '''$3''' ورځو لپاره د خبرتيا برېښليکونه او د ار بنديز لگېدلو وروسته يو برېښليک ترلاسه کړي.",
+	"blockinactive": "ناکارنده گڼونونو باندې بنديز لگول",
+	"blockinactive-table-username": "کارن‌نوم",
+	"blockinactive-table-userid": "کارن پېژند",
+	"blockinactive-table-inactivetime": "ناکارنده وخت",
+	"blockinactive-table-emailsent": "برېښليک مو ولېږل شو",
+	"blockinactive-table-actions": "چارې",
+	"blockinactive-action-block": "بنديز لگول",
+	"blockinactive-config-threshold": "هغه ورځې چې گڼون پکې ناکارنده گڼل کېږي",
+	"blockinactive-config-daysblock": "د بنديز لگولو پيل ورځې",
+	"blockinactive-config-warningdaysleft": "د بنديزلگولو خبرتيا لېږلو لپاره ورځې",
+	"blockinactive-config-mail-subject": "گواښنه! ستاسو ويکي گڼون باندې به ډېر ژر بنديز ولگول شي",
+	"blockinactive-config-mail-body": "ستاسو په ويکي گڼون به ډېر ژر د ناکارندتيا له کبله بنديز ولگول شي. د بنديز د مخنيوي لپاره مهرباني وکړئ {{SITENAME}} ته ننوځئ، چې ستاسو گڼون کارنده کړي او د بنديز مخه يې ونيسي.",
+	"blockinactive-config-mail-block-subject": "ستاسو ويکي گڼون باندې بنديز لگېدلی",
+	"blockinactive-config-mail-block-body": "ستاسو په ويکي گڼون باندې د ناکارندتيا له کبله خپلکاری بنديز لگېدلی. د خپل گڼون بيا کارندولو لپاره مهرباني وکړئ د {{SITENAME}} پازوال سره اړيکه ونيسئ.",
+	"action-blockinactive": "ناکارنده گڼونونو باندې بنديز ولگوئ",
+	"right-blockinactive": "ناکارنده گڼونونو باندې بنديز لگول",
+	"right-alwaysactive": "د ناکارندتيا له کبله بنديز لگېدل له پامه وغورځوئ",
+	"action-alwaysactive": "د ناکارندتيا له کبله بنديز لگېدل له پامه وغورځوئ"
+}
